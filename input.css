@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .anim {
+        transition: background-color 0.3s ease 0s;
+    }
+/* текст серый для параграфа 18 пик
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+ 27px 
+  */
+    .text-18-gray-500 {
+        @apply text-base md:text-lg text-gray-500 leading-normal;
+    }
+    
+    /* зоголовок h2  (24px) только размер и адаптив без line-height: 150%; */
+
+    .title-h2 {
+        @apply text-2xl md:text-3xl md1:text-4xl font-extrabold text-gray-900 dark:text-white;
+    }
+}

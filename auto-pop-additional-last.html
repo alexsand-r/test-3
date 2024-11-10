@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/fonts.css"/>
   
     <link rel="stylesheet" href="css/style.css" />
-     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/lot.css"/>
 
     
@@ -545,6 +545,8 @@
                               class="hidden lg2:block text-white bg-primary-200  font-medium rounded-lg text-sm px-3 py-2 dark:bg-primary-200 ml-[36px] btn-plus">
                               Increase</button>
                           </div>
+
+
                           <div id="alert-3"
                             class="px-4 pb-4 pt-[10px] md:pt-3  text-green-800 rounded-lg bg-green-50 dark:bg-gray-900 dark:text-green-400"
                             role="alert">
@@ -806,37 +808,26 @@
                             </div>
                           </div>
                         </div>
-          
+                             <!-- select country -->
                         <div class="mb-[14px] relative flex flex-col gap-2">
                           <label for="countries" class="sr-only">Select country</label>
                           <select id="countries"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm font-normal rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option id="germany" selected="" value="$4000">
-                              Germany
-                            </option>
-                            <option id="united-states" value="$1000">
-                              United States
-                            </option>
-                            <option id="canada" value="$2000">Canada</option>
-                            <option id="france" value="$3000">France</option>
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm font-normal rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full">
+                            <option data-id="country" value="germany" selected>Germany</option>
+                            <option data-id="country" value="poland">Poland</option>
+                            <option data-id="country" value="france">France</option>
                           </select>
-                          <label for="countries1" class="sr-only">Select country</label>
-                          <select id="countries1"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm font-normal rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option id="bremerhaven" selected="" value="">
-                              Bremerhaven
-                            </option>
-                            <option id="united-states" value="bremerhaven-2">
-                              Bremerhaven-2
-                            </option>
-                            <option id="bremerhaven-3" value="">
-                              Bremerhaven-3
-                            </option>
-                            <option id="bremerhaven-4" value="">
-                              Bremerhaven-4
-                            </option>
-                          </select>
+                        
+                          <!-- Блок для отображения городов -->
+                          <label for="countries1" class="sr-only">Select city</label>
+                          <div id="select-city">
+                                <select 
+                                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm font-normal rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full">
+                              
+                                </select>
+                          </div>
                         </div>
+                        <!--  -->
                         <div class="flex flex-col gap-2 mb-[13px] md:mb-0">
           
                           <div class="flex items-start">
@@ -3318,6 +3309,7 @@
     <script src="js/flowbite.js"></script>
     <script src="js/auto-script.js"></script>
     <script src="js/btn-copy.js"></script>
+    <script src="js/calculation-of-shipping-costs.js"></script>
 
   </body>
 </html>

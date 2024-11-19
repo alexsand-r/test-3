@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (gallery) {
     lightGallery(gallery, {
       speed: 500, // Настройки
-      download: false, // Убирает кнопку загрузки
+      // download: false, // Убирает кнопку загрузки
+      loop: false, // Отключить бесконечное листание (для ограничения)
     });
   }
 });

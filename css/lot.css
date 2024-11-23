@@ -1,0 +1,48 @@
+
+
+
+.images-preview {
+    margin-top: -50px;
+}
+
+@media (min-width: 450px) {
+    .images-preview {
+        margin-top: -70px;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .images-preview {
+        margin-top: -80px;
+    }
+}
+
+
+
+/* -------------------------------------------------- */
+.box__post {
+    height: 160px;
+    overflow: hidden;
+}
+/*-----------------------  кнопки показать больше и меньше на странице со слайдером авто  ---------------*/
+.box-text {
+    max-height: 123px;
+    overflow: hidden;
+}
+/* cкрол бар синий скрол бар в condition    damage  fuel type  */
+/* Стилизация ширины и цвета скроллбара */
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2563EB;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2563EB;
+    border-radius: 3px;
+}

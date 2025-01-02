@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account-balance.css">
+    <title>account-balance</title>
+
+
+</head>
+
+<body id="body-page" class="dark:bg-gray-800">
+    <div class="wrapper flex min-h-[100vh] flex-col">
+        <!-- Header -->
+        <header>
+            <div class="dark:bg-gray-800">
+                <div class="mx-auto max-w-[1290px] px-[15px]">
+                    <div class="flex justify-between mx-auto max-w-screen-xl py-[7px] ">
+                        <div class="flex justify-center items-center gap-[32px]">
+                            <a href="#" class="hidden lg:flex items-center">
+                                <div class="w-full">
+                                    <img src="img/logo/logo_black.svg" alt="logo">
+                                </div>
+                            </a>
+
+
+                            <a href="https://flowbite.com" class="flex lg:hidden items-center gap-x-2">
+                                <img src="img/logo/a-logo.svg" alt="logo">
+                                <img src="img/logo/logo-mobile.svg" alt="logo">
+                            </a>
+
+                            <div class="hidden md:flex justify-center items-center gap-[32px]">
+                                <button type="button"
+                                    class="text-sm font-medium text-gray-500 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">For
+                                    dealers</button>
+                                <button type="button"
+                                    class="text-sm font-medium text-gray-500 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Franchise</button>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- block EN-Cur -->
+                        <div class="hidden md:flex items-center ">
+                            <!-- English -->
+
+                            <div>
+                                <button type="button" data-dropdown-toggle="language-dropdown"
+                                    class="inline-flex items-center text-gray-900 dark:text-gray-300 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm  py-2 lg:py-2.5  dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 pl-[10px] pr-[10px] mr-4">
+
+                                    <span class="hidden mr-2 md:inline">English</span>
+                                    <svg class="hidden w-4 h-4 md:inline" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <div>
+                                    <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 "
+                                        id="language-dropdown">
+                                        <ul class="py-1 ">
+                                            <li>
+                                                <a href="#"
+                                                    class="block py-2 px-[11px] text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white ">
+                                                    <div class="inline-flex items-center">
+
+                                                        English (US)
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block py-2 px-[11px] text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white ">
+                                                    <div class="inline-flex items-center">
+
+                                                        Deutsch
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block py-2 px-[11px] text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white ">
+                                                    <div class="inline-flex items-center">
+
+                                                        Italiano
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block py-2 px-[11px] text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white ">
+                                                    <div class="inline-flex items-center">
+
+                                                        中文 (繁體)
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- Currency -->
+                            <div class="w-[110px]">
+                                <button type="button" data-dropdown-toggle="language-dropdown-currency"
+                                    class="inline-flex items-center text-gray-900 dark:text-gray-300 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm  py-2 lg:py-2.5  dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 pl-[10px] pr-[10px] ">
+
+                                    <span class="hidden mr-2 md:inline">Currency</span>
+                                    <svg class="hidden w-4 h-4 md:inline" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <!-- Dropdown Currency -->
+                                <div class="hidden z-50 my-4  text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 w-[110px]"
+                                    id="language-dropdown-currency">
+                                    <ul class="py-1 ">
+                                        <li>
+                                            <a href="#"
+                                                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                <div class="inline-flex items-center">
+
+                                                    USD
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                <div class="inline-flex items-center">
+
+                                                    EUR
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                <div class="inline-flex items-center">
+
+                                                    PLN
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                <div class="inline-flex items-center">
+
+                                                    CAD
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+
+                            <span
+                                class="mr-0 ml-2 w-px h-5 bg-gray-200 dark:bg-gray-600 lg:inline lg:mr-3 lg:ml-5"></span>
+                            <a href="#"
+                                class="inline-flex items-center p-2  text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                                <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center p-2  text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                                <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+
+                        </div>
+
+                        <!-- Login & Sign Up  -->
+
+                        <div id="sign-up1" class="flex md:hidden  items-center lg:order-3 gap-6">
+                            <button type="button" class="cursor-pointer">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transition duration-300 text-[#6B7280] hover:text-[#4a4e57]">
+                                    <path
+                                        d="M12.0003 2.89999C10.0908 2.89999 8.25942 3.65856 6.90916 5.00883C5.5589 6.35909 4.80033 8.19044 4.80033 10.1V14.4032L3.95193 15.2516C3.78416 15.4194 3.66991 15.6332 3.62363 15.866C3.57735 16.0987 3.60111 16.3399 3.69192 16.5592C3.78272 16.7784 3.93649 16.9658 4.13378 17.0977C4.33107 17.2295 4.56303 17.2999 4.80033 17.3H19.2003C19.4376 17.2999 19.6696 17.2295 19.8669 17.0977C20.0642 16.9658 20.2179 16.7784 20.3087 16.5592C20.3995 16.3399 20.4233 16.0987 20.377 15.866C20.3307 15.6332 20.2165 15.4194 20.0487 15.2516L19.2003 14.4032V10.1C19.2003 8.19044 18.4418 6.35909 17.0915 5.00883C15.7412 3.65856 13.9099 2.89999 12.0003 2.89999ZM12.0003 22.1C11.0456 22.1 10.1299 21.7207 9.45475 21.0456C8.77961 20.3704 8.40033 19.4548 8.40033 18.5H15.6003C15.6003 19.4548 15.221 20.3704 14.5459 21.0456C13.8708 21.7207 12.9551 22.1 12.0003 22.1Z" />
+                                </svg>
+                            </button>
+                            <div>
+
+                                <button id="dropdownUserAvatarButton-1" data-dropdown-toggle="dropdownAvatar-1"
+                                    class="flex items-center justify-center text-sm bg-primary-500 w-[33px] h-[33px] rounded-lg md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                    type="button">
+                                    <span class="sr-only">Open user menu</span>
+                                    <span class="text-xs text-white font-medium">PH</span>
+                                </button>
+
+                                <!-- Dropdown menu -->
+                                <div id="dropdownAvatar"
+                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-md w-44 dark:bg-gray-700 dark:divide-gray-600 shadow-gray-500">
+                                    <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                                        <div>Bonnie Green</div>
+                                        <div class="font-medium truncate">name@flowbite.com</div>
+                                    </div>
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                        aria-labelledby="dropdownUserAvatarButton">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                        </li>
+                                    </ul>
+                                    <div class="py-2">
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                            out</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <!-- mobile-menu-->
+                            <button data-collapse-toggle="mobile-menu-3" type="button"
+                                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
+                                aria-controls="mobile-menu-3" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <!-- burger-icon -->
+                                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- line across the screen -->
+
+            <div class=" h-[1px] bg-gray-200 w-[100%]"> </div>
+
+            <div class="mx-auto max-w-[1290px] px-[15px]">
+                <!-- list -->
+                <div class="block md:hidden justify-between items-center w-full  lg:order-1 lg:w-auto hidden"
+                    id="mobile-menu-3">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <button id="mega-menu-button-3" data-dropdown-toggle="mega-menu-3"
+                                class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 lg:w-auto hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">Makes
+                                <svg class="ml-1 w-5 h-5 lg:w-4 lg:h-4" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 border-b border-gray-100 text-gray-600 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-primary-500 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-primary-500 lg:dark:hover:bg-transparent dark:border-gray-700 "
+                                aria-current="page">Models</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">F.A.Q.</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">Delivery</a>
+                        </li>
+                        <li>
+
+                            <div id="mega-menu-3"
+                                class="grid hidden absolute z-10 w-full bg-white border border-gray-100 shadow-md dark:border-gray-700 lg:rounded-lg lg:w-auto lg:grid-cols-3 dark:bg-gray-700">
+                                <div
+                                    class="p-2 text-gray-900 bg-white lg:rounded-lg dark:text-white lg:col-span-2 dark:bg-gray-800 ">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <div class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="font-semibold ">Explore Design Work</div>
+                                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                        Trending designs to inspire you</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <div class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd"
+                                                            d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1001.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="font-semibold ">New & Noteworthy</div>
+                                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                        Up-and-coming designers</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <div class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z">
+                                                        </path>
+                                                        <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="font-semibold ">Playoffs</div>
+                                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                        Work designers are riffing on</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <div class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z">
+                                                        </path>
+                                                        <path
+                                                            d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="font-semibold ">Blog</div>
+                                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                        Interviews, tutorials, and more</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <div class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd"
+                                                            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="font-semibold ">Weekly Warm-up</div>
+                                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                        Prompt to flex your skills</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="py-5 px-5 bg-gray-50 lg:rounded-lg lg:col-span-1 dark:bg-gray-700">
+                                    <h3 class="mb-4 text-sm font-semibold text-gray-900 dark:text-white ">Browse
+                                        categories</h3>
+                                    <ul class="space-y-4 text-sm text-gray-500 dark:text-gray-400 ">
+                                        <li>
+                                            <a href="#"
+                                                class="hover:text-primary-600 dark:hover:text-primary-500 ">Animation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="hover:text-primary-600 dark:hover:text-primary-500 ">Branding</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="hover:text-primary-600 dark:hover:text-primary-500 ">Illustration</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="hover:text-primary-600 dark:hover:text-primary-500 ">Mobile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="hover:text-primary-600 dark:hover:text-primary-500 ">Print</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="hover:text-primary-600 dark:hover:text-primary-500 ">Product
+                                                Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hover:text-primary-600 dark:hover:text-primary-500 ">Web
+                                                Design</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">Auctions</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="dark:bg-gray-800">
+                <div class="mx-auto max-w-[1290px] px-[15px]">
+                    <!-- вторая строка -->
+                    <nav class="hidden md:block bg-white border-gray-200 py-[10px] dark:bg-gray-800">
+                        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
+                            <!-- ! -->
+                            <form
+                                class="flex flex-1 justify-end pl-[15px]   pr-[15px] xl:pr-[33px] lg:order-2 h-[36px] relative">
+                                <label for="default-search"
+                                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white h-[37px] border-b border-gray-200 ">Search</label>
+                                <div
+                                    class="relative flex w-[100%] lg:w-[90%] lg1:w-[90%] lg2:w-[80%] xl:w-[70%] h-[36px]">
+
+                                    <input type="search" id="default-search"
+                                        class="flex justify-end w-full p-4  text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 "
+                                        placeholder="Search by vin, make or model">
+                                    <button type="submit"
+                                        class=" justify-end absolute right-0 bottom-0 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 h-full dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                        <svg class="w-4 h-4 text-white " aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                        </svg>
+                                    </button>
+                                    <!--! выпадашка под поиск -->
+                                    <div id="search-header"
+                                        class="hidden border rounded-lg border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800 focus:ring-primary-500 focus:border-primary-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 pt-2.5 py-1   absolute top-[45px] right-[0px]  z-10 shadow-md ">
+                                        <!-- <p class="mb-3 pl-4 text-sm text-gray-900 font-semibold ">Search suggestion</p> -->
+                                        <!-- 1 -->
+                                        <a href="#" class="relative  mb-[6px] pl-[42px] pr-[36px] flex ">
+
+                                            <img src="img/catalog/search.svg" alt="icon"
+                                                class="absolute top-[3px] left-[17px]">
+
+
+                                            <label data-v-e1="" class="flex items-center relative ">
+                                                <span data-v-e1=""
+                                                    class="text-sm font-normal text-primary-500 dark:text-gray-300 cursor-pointer block w-full">
+                                                    Тут ссылка
+                                                </span>
+
+                                            </label>
+
+
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#" class="relative  mb-[6px] pl-[42px] pr-[36px] flex ">
+
+                                            <img src="img/catalog/search.svg" alt="icon"
+                                                class="absolute top-[3px] left-[17px]">
+
+
+                                            <label data-v-e1="" class="flex items-center relative ">
+                                                <span data-v-e1=""
+                                                    class="text-sm font-normal text-primary-500 dark:text-gray-300 cursor-pointer block w-full">
+                                                    Audi A8 XL 3.0l
+                                                </span>
+
+                                            </label>
+
+
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#" class="relative  mb-[6px] pl-[42px] pr-[36px] flex ">
+
+                                            <img src="img/catalog/search.svg" alt="icon"
+                                                class="absolute top-[3px] left-[17px]">
+
+
+                                            <label data-v-e1="" class="flex items-center relative ">
+                                                <span data-v-e1=""
+                                                    class="text-sm font-normal text-primary-500 dark:text-gray-300 cursor-pointer block w-full">
+                                                    Audi A8 XL 3.0l
+                                                </span>
+
+                                            </label>
+
+
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#" class="relative  mb-[6px] pl-[42px] pr-[36px] flex ">
+
+                                            <img src="img/catalog/search.svg" alt="icon"
+                                                class="absolute top-[3px] left-[17px]">
+
+
+                                            <label data-v-e1="" class="flex items-center relative ">
+                                                <span data-v-e1=""
+                                                    class="text-sm font-normal text-primary-500 dark:text-gray-300 cursor-pointer block w-full">
+                                                    Audi A8 XL 3.0l
+                                                </span>
+
+                                            </label>
+
+
+                                        </a>
+                                        <!-- 5 -->
+                                        <a href="#" class="relative  mb-[6px] pl-[42px] pr-[36px] flex ">
+
+                                            <img src="img/catalog/search.svg" alt="icon"
+                                                class="absolute top-[3px] left-[17px]">
+
+
+                                            <label data-v-e1="" class="flex items-center relative ">
+                                                <span data-v-e1=""
+                                                    class="text-sm font-normal text-primary-500 dark:text-gray-300 cursor-pointer block w-full">
+                                                    Audi A8 XL 3.0l
+                                                </span>
+
+                                            </label>
+
+
+                                        </a>
+                                        <!-- 6 -->
+                                        <a href="#" class="relative  mb-[6px] pl-[42px] pr-[36px] flex ">
+
+                                            <img src="img/catalog/search.svg" alt="icon"
+                                                class="absolute top-[3px] left-[17px]">
+
+
+                                            <label data-v-e1="" class="flex items-center relative ">
+                                                <span data-v-e1=""
+                                                    class="text-sm font-normal text-primary-500 dark:text-gray-300 cursor-pointer block w-full">
+                                                    Audi A8 XL 3.0l
+                                                </span>
+
+                                            </label>
+
+
+                                        </a>
+                                        <!-- 7 -->
+                                        <a href="#" class="relative  mb-[6px] pl-[42px] pr-[36px] flex">
+
+                                            <img src="img/catalog/search.svg" alt="icon"
+                                                class="absolute top-[3px] left-[17px]">
+
+
+                                            <label data-v-e1="" class="flex items-center relative ">
+                                                <span data-v-e1=""
+                                                    class="text-sm font-normal text-primary-500 dark:text-gray-300 cursor-pointer block w-full">
+                                                    Audi A8 XL 3.0l
+                                                </span>
+
+                                            </label>
+
+
+                                        </a>
+
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </form>
+                            <!-- Login & Sign Up  -->
+                            <div id="sign-up" class="flex items-center lg:order-3 gap-6">
+                                <button type="button" class="cursor-pointer">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="transition duration-300 text-[#6B7280] hover:text-[#4a4e57]">
+                                        <path
+                                            d="M12.0003 2.89999C10.0908 2.89999 8.25942 3.65856 6.90916 5.00883C5.5589 6.35909 4.80033 8.19044 4.80033 10.1V14.4032L3.95193 15.2516C3.78416 15.4194 3.66991 15.6332 3.62363 15.866C3.57735 16.0987 3.60111 16.3399 3.69192 16.5592C3.78272 16.7784 3.93649 16.9658 4.13378 17.0977C4.33107 17.2295 4.56303 17.2999 4.80033 17.3H19.2003C19.4376 17.2999 19.6696 17.2295 19.8669 17.0977C20.0642 16.9658 20.2179 16.7784 20.3087 16.5592C20.3995 16.3399 20.4233 16.0987 20.377 15.866C20.3307 15.6332 20.2165 15.4194 20.0487 15.2516L19.2003 14.4032V10.1C19.2003 8.19044 18.4418 6.35909 17.0915 5.00883C15.7412 3.65856 13.9099 2.89999 12.0003 2.89999ZM12.0003 22.1C11.0456 22.1 10.1299 21.7207 9.45475 21.0456C8.77961 20.3704 8.40033 19.4548 8.40033 18.5H15.6003C15.6003 19.4548 15.221 20.3704 14.5459 21.0456C13.8708 21.7207 12.9551 22.1 12.0003 22.1Z" />
+                                    </svg>
+                                </button>
+                                <div>
+
+                                    <button id="dropdownUserAvatarButton-1" data-dropdown-toggle="dropdownAvatar-1"
+                                        class="flex items-end justify-center text-sm bg-primary-500 w-[33px] h-[33px] rounded-[8px] md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                        type="button">
+                                        <span class="sr-only">Open user menu</span>
+                                        <div class="bg-primary-500 w-[33px] h-[33px] rounded-[8px] flex items-center justify-center">
+                                            <svg class="w-[13px] h-4">
+                                                <use xlink:href="./sprite.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownAvatar-1"
+                                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-md w-44 dark:bg-gray-700 dark:divide-gray-600 shadow-gray-500">
+                                        <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                                            <div>Bonnie Green</div>
+                                            <div class="font-medium truncate">name@flowbite.com</div>
+                                        </div>
+                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                            aria-labelledby="dropdownUserAvatarButton">
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                            </li>
+                                        </ul>
+                                        <div class="py-2">
+                                            <a href="#"
+                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                                out</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- cписок -->
+                            <div class="hidden justify-between items-center w-full lg:flex lg:order-1 lg:w-auto "
+                                id="mobile-menu-2">
+                                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ">
+                                    <li>
+                                        <button id="mega-menu-button" data-dropdown-toggle="mega-menu"
+                                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">Makes
+                                            <svg class="ml-1 w-5 h-5 lg:w-4 lg:h-4" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg></button>
+                                        <div id="mega-menu"
+                                            class="grid hidden absolute z-10 w-full bg-white border border-gray-100 shadow-md dark:border-gray-700 lg:rounded-lg lg:w-auto lg:grid-cols-3 dark:bg-gray-700">
+                                            <div
+                                                class="p-2 text-gray-900 bg-white lg:rounded-lg dark:text-white lg:col-span-2 dark:bg-gray-800 ">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                            <div
+                                                                class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                                <svg class="w-5 h-5" fill="currentColor"
+                                                                    viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
+                                                                    </path>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="font-semibold ">Explore Design Work</div>
+                                                                <div
+                                                                    class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                                    Trending designs to inspire you</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                            <div
+                                                                class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                                <svg class="w-5 h-5" fill="currentColor"
+                                                                    viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1001.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="font-semibold ">New & Noteworthy</div>
+                                                                <div
+                                                                    class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                                    Up-and-coming designers</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                            <div
+                                                                class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                                <svg class="w-5 h-5" fill="currentColor"
+                                                                    viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z">
+                                                                    </path>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="font-semibold ">Playoffs</div>
+                                                                <div
+                                                                    class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                                    Work designers are riffing on</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                            <div
+                                                                class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                                <svg class="w-5 h-5" fill="currentColor"
+                                                                    viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z">
+                                                                    </path>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="font-semibold  ">Blog</div>
+                                                                <div
+                                                                    class="text-sm font-light text-gray-500 dark:text-gray-400  ">
+                                                                    Interviews, tutorials, and more</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                            <div
+                                                                class="p-2 mr-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                                                                <svg class="w-5 h-5" fill="currentColor"
+                                                                    viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="font-semibold ">Weekly Warm-up</div>
+                                                                <div
+                                                                    class="text-sm font-light text-gray-500 dark:text-gray-400 ">
+                                                                    Prompt to flex your skills</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div
+                                                class="py-5 px-5 bg-gray-50 lg:rounded-lg lg:col-span-1 dark:bg-gray-700">
+                                                <h3 class="mb-4 text-sm font-semibold text-gray-900 dark:text-white ">
+                                                    Browse
+                                                    categories</h3>
+                                                <ul class="space-y-4 text-sm text-gray-500 dark:text-gray-400 ">
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:text-primary-600 dark:hover:text-primary-500 ">Animation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:text-primary-600 dark:hover:text-primary-500 ">Branding</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:text-primary-600 dark:hover:text-primary-500 ">Illustration</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:text-primary-600 dark:hover:text-primary-500 ">Mobile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:text-primary-600 dark:hover:text-primary-500 ">Print</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:text-primary-600 dark:hover:text-primary-500 ">Product
+                                                            Design</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:text-primary-600 dark:hover:text-primary-500 ">Web
+                                                            Design</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700  "
+                                            aria-current="page">Models</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">F.A.Q.</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">Delivery</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">Auctions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">About
+                                            Us</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- line across the screen -->
+            <div class=" h-[1px] bg-gray-200 w-[100%]">
+
+            </div>
+        </header>
+        <!-- Block end -->
+
+
+
+
+        <div class="flex-auto dark:bg-gray-800">
+
+            <!-- account 2-->
+            <section class="bg-[#F9FAFB] ">
+                <div class="mx-auto max-w-[1290px] px-[15px] pt-[16px] pb-[34px]  lg:-10">
+
+
+                    <div class="block md1:flex   gap-[25px]">
+                        <!-- left column -->
+
+                        <div
+                            class="w-[100%] lg:w-[30%] bg-white dark:bg-gray-900 py-4 px-3 rounded-lg mb-6 md1:mb-0 flex flex-col items-stretch shadow-sm">
+                        
+                            <!-- user block -->
+                            <div class="flex md:hidden gap-2 items-center md1:flex mb-6 px-2">
+                                <div class="bg-primary-500 w-[33px] h-[33px] rounded-[8px] flex items-center justify-center">
+                                    <svg class="w-[13px] h-4">
+                                        <use xlink:href="./sprite.svg#user"></use>
+                                    </svg>
+                                </div>
+                                <div class=" w-[63%]">
+                                    <h3 class="leading-tight text-base font-semibold text-gray-900">Bonnie Green
+                                    </h3>
+                                    <p class=" leading-none text-sm font-normal ">name@company.com</p>
+                                </div>
+                        
+                            </div>
+                        
+                            <!-- блок левый сайтбар по три штуки -->
+                            <div class="gap-2 mb-4 justify-between  flex flex-col md:flex-row md1:flex-col h-full">
+                                <div class="flex flex-col gap-2 md:flex-row md:justify-between w-full md1:flex-col">
+                                    <!-- первый блок по три -->
+                                    <div class="flex flex-col gap-2">
+                                        <!-- Account -->
+                                        <button type="button" class="flex items-center gap-3 px-2 py-2 rounded-md button-accordion bg-white"
+                                            data-target>
+                        
+                                            <svg class="w-5 h-5">
+                                                <use xlink:href="./sprite.svg#house"></use>
+                                            </svg>
+                        
+                                            <span class="leading-none text-base font-medium text--gray-900 text-left">Account</span>
+                                        </button>
+                        
+                                        <!-- Balance -->
+                                        <button type="button"
+                                            class="flex items-center justify-between gap-3 px-2 py-2 rounded-md button-accordion bg-white"
+                                            data-target>
+                                            <span class="flex items-center gap-3">
+                                                <svg class="w-4 h-4">
+                                                    <use xlink:href="./sprite.svg#credit-card-outline"></use>
+                                                </svg>
+                                                <span class="cursor-pointer text-base font-medium text-base text-gray-400">
+                                                    Balance</span>
+                                            </span>
+                        
+                        
+                                            <span
+                                                class="bg-red-100 text-red-800 text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
+                                                Soon
+                                            </span>
+                                        </button>
+
+                                        <!-- Bids -->
+                                        <button type="button" class="flex items-center justify-between gap-3 px-2 py-2 rounded-md button-accordion bg-white"
+                                            data-target>
+                                            <span class="flex items-center gap-3">
+                                                <svg class="w-4 h-4">
+                                                    <use xlink:href="./sprite.svg#list"></use>
+                                                </svg>
+                                                <span class="cursor-pointer text-base font-medium text-base text-gray-400">
+                                                    Bids</span>
+                                            </span>
+                                        
+                                        
+                                            <span class="bg-red-100 text-red-800 text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
+                                                Soon
+                                            </span>
+                                        </button>
+                        
+                                        <!-- Wishlist -->
+                                        <button type="button"
+                                            class="flex items-center justify-between gap-3 px-2 py-2 rounded-md button-accordion bg-white"
+                                            data-target>
+                                            <span class="flex items-center gap-3">
+                                                <svg class="w-5 h-5 translate-y-[1px]">
+                                                    <use xlink:href="./sprite.svg#gray-heart"></use>
+                                                </svg>
+                                                <span class="cursor-pointer text-base font-medium text-base text-gray-400">
+                                                    Wishlist
+                                                </span>
+                                            </span>
+                        
+                        
+                                            <span
+                                                class="bg-red-100 text-red-800 text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
+                                                Soon
+                                            </span>
+                                        </button>
+                                    </div>
+                        
+                        
+                                    <!-- второй блок по три -->
+                                    <div class="flex flex-col gap-2">
+                        
+                                        <!-- Messages -->
+                                        <button type="button"
+                                            class="flex items-center justify-between gap-3 px-2 py-2 rounded-md button-accordion bg-white"
+                                            data-target>
+                                            <span class="flex items-center gap-3">
+                                                <svg class="w-5 h-5">
+                                                    <use xlink:href="./sprite.svg#messages"></use>
+                                                </svg>
+                                                <span class="cursor-pointer text-base font-medium text-base text-gray-400">
+                                                    Messages
+                                                </span>
+                                            </span>
+                        
+                        
+                                            <span
+                                                class="bg-red-100 text-red-800 text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
+                                                Soon
+                                            </span>
+                                        </button>
+                        
+                                        <!-- Notifications -->
+                                        <button type="button"
+                                            class="flex items-center justify-between gap-3 px-2 py-2 rounded-md button-accordion bg-white"
+                                            data-target>
+                                            <span class="flex items-center gap-3">
+                                                <svg class="w-4 h-5">
+                                                    <use xlink:href="./sprite.svg#notifications"></use>
+                                                </svg>
+                                                <span class="cursor-pointer text-base font-medium text-base text-gray-400">
+                                                    Notifications</span>
+                                            </span>
+                        
+                        
+                                            <span
+                                                class="bg-red-100 text-red-800 text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
+                                                Soon
+                                            </span>
+                                        </button>
+                        
+                                        <!-- VIN Removal -->
+                                        <button type="button"
+                                            class="bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center gap-2 px-2 py-2">
+                                            <svg class="w-4 h-4">
+                                                <use xlink:href="./sprite.svg#eye-icon"></use>
+                                            </svg>
+                                            VIN Removal
+                                        </button>
+                                        <!-- полоска -->
+                                        <div class="hidden w-full h-[1px] bg-gray-200 md1:block mt-6 mb-6"></div>
+                                    </div>
+                        
+                                    <div class="flex flex-col gap-2 md:gap-4 md1:hidden">
+                                        <!-- Settings -->
+                                        <!-- тут блок юзер после 530 пик -->
+                                        <div class="flex gap-2 pl-2 items-center hidden md:flex md1:hidden">
+                                            <div class="bg-primary-500 w-[32px] h-[32px] rounded-md flex items-center justify-center">
+                                                <span class="uppercase text-xs text-white font-medium">PH</span>
+                                            </div>
+                                            <div class=" w-[63%]">
+                                                <h3 class="leading-tight text-base font-semibold text-gray-900">Bonnie Green
+                                                </h3>
+                                                <p class=" leading-none text-sm font-normal ">name@company.com</p>
+                                            </div>
+                        
+                                        </div>
+                        
+                                        <button type="button" class="flex items-center gap-3 px-2 ">
+                        
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M12.6389 3.48695C12.2209 1.77095 9.77892 1.77095 9.36092 3.48695C9.29851 3.74481 9.17611 3.98429 9.00366 4.1859C8.83122 4.38752 8.61361 4.54557 8.36855 4.6472C8.12348 4.74883 7.85789 4.79116 7.59337 4.77075C7.32886 4.75034 7.0729 4.66777 6.84632 4.52975C5.33712 3.61015 3.61012 5.33715 4.52972 6.84635C5.12372 7.82095 4.59682 9.09255 3.48802 9.36205C1.77092 9.77895 1.77092 12.2221 3.48802 12.6379C3.74595 12.7003 3.98547 12.8229 4.18708 12.9954C4.3887 13.168 4.5467 13.3858 4.64823 13.631C4.74976 13.8762 4.79195 14.1419 4.77136 14.4064C4.75076 14.671 4.66797 14.927 4.52972 15.1536C3.61012 16.6628 5.33712 18.3897 6.84632 17.4701C7.07285 17.3319 7.32884 17.2491 7.59342 17.2285C7.85801 17.2079 8.12372 17.2501 8.36892 17.3516C8.61411 17.4532 8.83187 17.6112 9.00444 17.8128C9.17702 18.0144 9.29953 18.2539 9.36202 18.5119C9.77892 20.229 12.222 20.229 12.6378 18.5119C12.7005 18.2541 12.8232 18.0147 12.9958 17.8132C13.1684 17.6117 13.3861 17.4538 13.6312 17.3523C13.8763 17.2508 14.1419 17.2086 14.4065 17.2291C14.671 17.2496 14.9269 17.3321 15.1535 17.4701C16.6627 18.3897 18.3897 16.6628 17.4701 15.1536C17.3321 14.927 17.2495 14.671 17.2291 14.4065C17.2086 14.142 17.2508 13.8764 17.3523 13.6312C17.4538 13.3861 17.6117 13.1684 17.8132 12.9958C18.0147 12.8232 18.254 12.7005 18.5118 12.6379C20.2289 12.221 20.2289 9.77785 18.5118 9.36205C18.2539 9.29956 18.0144 9.17705 17.8128 9.00447C17.6111 8.8319 17.4531 8.61415 17.3516 8.36895C17.2501 8.12375 17.2079 7.85804 17.2285 7.59345C17.2491 7.32887 17.3319 7.07288 17.4701 6.84635C18.3897 5.33715 16.6627 3.61015 15.1535 4.52975C14.927 4.668 14.671 4.75079 14.4064 4.77139C14.1418 4.79198 13.8761 4.7498 13.6309 4.64826C13.3857 4.54673 13.168 4.38873 12.9954 4.18711C12.8228 3.9855 12.7003 3.74598 12.6378 3.48805L12.6389 3.48695ZM10.9999 14.2999C11.8751 14.2999 12.7145 13.9523 13.3334 13.3334C13.9522 12.7145 14.2999 11.8752 14.2999 11C14.2999 10.1247 13.9522 9.28537 13.3334 8.6665C12.7145 8.04763 11.8751 7.69995 10.9999 7.69995C10.1247 7.69995 9.28534 8.04763 8.66647 8.6665C8.0476 9.28537 7.69992 10.1247 7.69992 11C7.69992 11.8752 8.0476 12.7145 8.66647 13.3334C9.28534 13.9523 10.1247 14.2999 10.9999 14.2999Z"
+                                                    fill="#9CA3AF" />
+                                            </svg>
+                        
+                                            <span class="leading-none text-sm font-medium  text-gray-500 text-left">Settings</span>
+                                        </button>
+                        
+                                        <!-- Help & getting started -->
+                        
+                                        <button type="button" class="flex items-center gap-3 px-2 ">
+                        
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19.8002 11C19.8002 13.3339 18.8731 15.5722 17.2227 17.2225C15.5724 18.8728 13.3341 19.7999 11.0002 19.7999C8.66629 19.7999 6.42798 18.8728 4.77766 17.2225C3.12734 15.5722 2.2002 13.3339 2.2002 11C2.2002 8.66605 3.12734 6.42773 4.77766 4.77741C6.42798 3.12709 8.66629 2.19995 11.0002 2.19995C13.3341 2.19995 15.5724 3.12709 17.2227 4.77741C18.8731 6.42773 19.8002 8.66605 19.8002 11ZM17.6002 11C17.6002 12.0922 17.3351 13.1219 16.8654 14.0294L15.189 12.3519C15.44 11.5749 15.4697 10.7434 15.2748 9.95055L16.993 8.23235C17.3824 9.07385 17.6002 10.01 17.6002 11ZM11.9187 15.3042L13.6567 17.0422C12.8196 17.4108 11.9148 17.6008 11.0002 17.5999C10.0445 17.6011 9.10002 17.3939 8.23259 16.9928L9.95079 15.2745C10.5961 15.4327 11.2689 15.4428 11.9187 15.3042ZM6.77399 12.2287C6.55753 11.4833 6.54197 10.694 6.7289 9.94065L6.64089 10.0287L4.9579 8.34235C4.58918 9.17979 4.39923 10.0849 4.4002 11C4.4002 12.0494 4.64549 13.0415 5.08109 13.9226L6.77509 12.2287H6.77399ZM7.97079 5.13365C8.90714 4.64967 9.94617 4.39803 11.0002 4.39995C12.0496 4.39995 13.0418 4.64525 13.9229 5.08085L12.2289 6.77485C11.3844 6.52886 10.4855 6.54151 9.64829 6.81115L7.97079 5.13475V5.13365ZM13.2002 11C13.2002 11.5834 12.9684 12.143 12.5558 12.5556C12.1432 12.9682 11.5837 13.2 11.0002 13.2C10.4167 13.2 9.85714 12.9682 9.44456 12.5556C9.03198 12.143 8.80019 11.5834 8.80019 11C8.80019 10.4165 9.03198 9.8569 9.44456 9.44432C9.85714 9.03174 10.4167 8.79995 11.0002 8.79995C11.5837 8.79995 12.1432 9.03174 12.5558 9.44432C12.9684 9.8569 13.2002 10.4165 13.2002 11Z"
+                                                    fill="#9CA3AF" />
+                                            </svg>
+                        
+                                            <span class="leading-none text-sm font-medium  text-gray-500 text-left">Help & getting
+                                                started</span>
+                                        </button>
+                        
+                                        <!-- полоска -->
+                                        <div class="hidden w-full h-[1px] bg-gray-200 md1:block"></div>
+                        
+                                        <!-- Invite friends & earn money -->
+                                        <button type="button" class="flex items-center gap-3 px-2 sm:hidden md:flex">
+                        
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8 9C8.79565 9 9.55871 8.68393 10.1213 8.12132C10.6839 7.55871 11 6.79565 11 6C11 5.20435 10.6839 4.44129 10.1213 3.87868C9.55871 3.31607 8.79565 3 8 3C7.20435 3 6.44129 3.31607 5.87868 3.87868C5.31607 4.44129 5 5.20435 5 6C5 6.79565 5.31607 7.55871 5.87868 8.12132C6.44129 8.68393 7.20435 9 8 9ZM8 11C9.5913 11 11.1174 11.6321 12.2426 12.7574C13.3679 13.8826 14 15.4087 14 17H2C2 15.4087 2.63214 13.8826 3.75736 12.7574C4.88258 11.6321 6.4087 11 8 11ZM16 7C16 6.73478 15.8946 6.48043 15.7071 6.29289C15.5196 6.10536 15.2652 6 15 6C14.7348 6 14.4804 6.10536 14.2929 6.29289C14.1054 6.48043 14 6.73478 14 7V8H13C12.7348 8 12.4804 8.10536 12.2929 8.29289C12.1054 8.48043 12 8.73478 12 9C12 9.26522 12.1054 9.51957 12.2929 9.70711C12.4804 9.89464 12.7348 10 13 10H14V11C14 11.2652 14.1054 11.5196 14.2929 11.7071C14.4804 11.8946 14.7348 12 15 12C15.2652 12 15.5196 11.8946 15.7071 11.7071C15.8946 11.5196 16 11.2652 16 11V10H17C17.2652 10 17.5196 9.89464 17.7071 9.70711C17.8946 9.51957 18 9.26522 18 9C18 8.73478 17.8946 8.48043 17.7071 8.29289C17.5196 8.10536 17.2652 8 17 8H16V7Z"
+                                                    fill="#9CA3AF" />
+                                            </svg>
+                        
+                                            <span class="leading-none text-sm font-medium  text-gray-500">Invite friends & earn money</span>
+                                        </button>
+                                    </div>
+                        
+                        
+                                </div>
+                        
+                        
+                        
+                        
+                                <div class="hidden md1:flex flex-col gap-2 md:gap-4">
+                                    <!-- Settings -->
+                                    <!-- тут блок юзер после 530 пик -->
+                                    <div class="flex gap-2 pl-2 items-center hidden md:flex md1:hidden">
+                                        <div class="bg-primary-500 w-[32px] h-[32px] rounded-md flex items-center justify-center">
+                                            <span class="uppercase text-xs text-white font-medium">PH</span>
+                                        </div>
+                                        <div class=" w-[63%]">
+                                            <h3 class="leading-tight text-base font-semibold text-gray-900">Bonnie Green
+                                            </h3>
+                                            <p class=" leading-none text-sm font-normal ">name@company.com</p>
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <button type="button" class="flex items-center gap-3 px-2 ">
+                        
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.6389 3.48695C12.2209 1.77095 9.77892 1.77095 9.36092 3.48695C9.29851 3.74481 9.17611 3.98429 9.00366 4.1859C8.83122 4.38752 8.61361 4.54557 8.36855 4.6472C8.12348 4.74883 7.85789 4.79116 7.59337 4.77075C7.32886 4.75034 7.0729 4.66777 6.84632 4.52975C5.33712 3.61015 3.61012 5.33715 4.52972 6.84635C5.12372 7.82095 4.59682 9.09255 3.48802 9.36205C1.77092 9.77895 1.77092 12.2221 3.48802 12.6379C3.74595 12.7003 3.98547 12.8229 4.18708 12.9954C4.3887 13.168 4.5467 13.3858 4.64823 13.631C4.74976 13.8762 4.79195 14.1419 4.77136 14.4064C4.75076 14.671 4.66797 14.927 4.52972 15.1536C3.61012 16.6628 5.33712 18.3897 6.84632 17.4701C7.07285 17.3319 7.32884 17.2491 7.59342 17.2285C7.85801 17.2079 8.12372 17.2501 8.36892 17.3516C8.61411 17.4532 8.83187 17.6112 9.00444 17.8128C9.17702 18.0144 9.29953 18.2539 9.36202 18.5119C9.77892 20.229 12.222 20.229 12.6378 18.5119C12.7005 18.2541 12.8232 18.0147 12.9958 17.8132C13.1684 17.6117 13.3861 17.4538 13.6312 17.3523C13.8763 17.2508 14.1419 17.2086 14.4065 17.2291C14.671 17.2496 14.9269 17.3321 15.1535 17.4701C16.6627 18.3897 18.3897 16.6628 17.4701 15.1536C17.3321 14.927 17.2495 14.671 17.2291 14.4065C17.2086 14.142 17.2508 13.8764 17.3523 13.6312C17.4538 13.3861 17.6117 13.1684 17.8132 12.9958C18.0147 12.8232 18.254 12.7005 18.5118 12.6379C20.2289 12.221 20.2289 9.77785 18.5118 9.36205C18.2539 9.29956 18.0144 9.17705 17.8128 9.00447C17.6111 8.8319 17.4531 8.61415 17.3516 8.36895C17.2501 8.12375 17.2079 7.85804 17.2285 7.59345C17.2491 7.32887 17.3319 7.07288 17.4701 6.84635C18.3897 5.33715 16.6627 3.61015 15.1535 4.52975C14.927 4.668 14.671 4.75079 14.4064 4.77139C14.1418 4.79198 13.8761 4.7498 13.6309 4.64826C13.3857 4.54673 13.168 4.38873 12.9954 4.18711C12.8228 3.9855 12.7003 3.74598 12.6378 3.48805L12.6389 3.48695ZM10.9999 14.2999C11.8751 14.2999 12.7145 13.9523 13.3334 13.3334C13.9522 12.7145 14.2999 11.8752 14.2999 11C14.2999 10.1247 13.9522 9.28537 13.3334 8.6665C12.7145 8.04763 11.8751 7.69995 10.9999 7.69995C10.1247 7.69995 9.28534 8.04763 8.66647 8.6665C8.0476 9.28537 7.69992 10.1247 7.69992 11C7.69992 11.8752 8.0476 12.7145 8.66647 13.3334C9.28534 13.9523 10.1247 14.2999 10.9999 14.2999Z"
+                                                fill="#9CA3AF" />
+                                        </svg>
+                        
+                                        <span class="leading-none text-sm font-medium  text-gray-500 text-left">Settings</span>
+                                    </button>
+                        
+                                    <!-- Help & getting started -->
+                        
+                                    <button type="button" class="flex items-center gap-3 px-2 ">
+                        
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19.8002 11C19.8002 13.3339 18.8731 15.5722 17.2227 17.2225C15.5724 18.8728 13.3341 19.7999 11.0002 19.7999C8.66629 19.7999 6.42798 18.8728 4.77766 17.2225C3.12734 15.5722 2.2002 13.3339 2.2002 11C2.2002 8.66605 3.12734 6.42773 4.77766 4.77741C6.42798 3.12709 8.66629 2.19995 11.0002 2.19995C13.3341 2.19995 15.5724 3.12709 17.2227 4.77741C18.8731 6.42773 19.8002 8.66605 19.8002 11ZM17.6002 11C17.6002 12.0922 17.3351 13.1219 16.8654 14.0294L15.189 12.3519C15.44 11.5749 15.4697 10.7434 15.2748 9.95055L16.993 8.23235C17.3824 9.07385 17.6002 10.01 17.6002 11ZM11.9187 15.3042L13.6567 17.0422C12.8196 17.4108 11.9148 17.6008 11.0002 17.5999C10.0445 17.6011 9.10002 17.3939 8.23259 16.9928L9.95079 15.2745C10.5961 15.4327 11.2689 15.4428 11.9187 15.3042ZM6.77399 12.2287C6.55753 11.4833 6.54197 10.694 6.7289 9.94065L6.64089 10.0287L4.9579 8.34235C4.58918 9.17979 4.39923 10.0849 4.4002 11C4.4002 12.0494 4.64549 13.0415 5.08109 13.9226L6.77509 12.2287H6.77399ZM7.97079 5.13365C8.90714 4.64967 9.94617 4.39803 11.0002 4.39995C12.0496 4.39995 13.0418 4.64525 13.9229 5.08085L12.2289 6.77485C11.3844 6.52886 10.4855 6.54151 9.64829 6.81115L7.97079 5.13475V5.13365ZM13.2002 11C13.2002 11.5834 12.9684 12.143 12.5558 12.5556C12.1432 12.9682 11.5837 13.2 11.0002 13.2C10.4167 13.2 9.85714 12.9682 9.44456 12.5556C9.03198 12.143 8.80019 11.5834 8.80019 11C8.80019 10.4165 9.03198 9.8569 9.44456 9.44432C9.85714 9.03174 10.4167 8.79995 11.0002 8.79995C11.5837 8.79995 12.1432 9.03174 12.5558 9.44432C12.9684 9.8569 13.2002 10.4165 13.2002 11Z"
+                                                fill="#9CA3AF" />
+                                        </svg>
+                        
+                                        <span class="leading-none text-sm font-medium  text-gray-500 text-left">Help & getting started</span>
+                                    </button>
+                        
+                                    <!-- полоска -->
+                                    <div class="hidden w-full h-[1px] bg-gray-200 md1:block"></div>
+                        
+                                    <!-- Invite friends & earn money -->
+                                    <button type="button" class="flex items-center gap-3 px-2 sm:hidden md:flex">
+                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 9C8.79565 9 9.55871 8.68393 10.1213 8.12132C10.6839 7.55871 11 6.79565 11 6C11 5.20435 10.6839 4.44129 10.1213 3.87868C9.55871 3.31607 8.79565 3 8 3C7.20435 3 6.44129 3.31607 5.87868 3.87868C5.31607 4.44129 5 5.20435 5 6C5 6.79565 5.31607 7.55871 5.87868 8.12132C6.44129 8.68393 7.20435 9 8 9ZM8 11C9.5913 11 11.1174 11.6321 12.2426 12.7574C13.3679 13.8826 14 15.4087 14 17H2C2 15.4087 2.63214 13.8826 3.75736 12.7574C4.88258 11.6321 6.4087 11 8 11ZM16 7C16 6.73478 15.8946 6.48043 15.7071 6.29289C15.5196 6.10536 15.2652 6 15 6C14.7348 6 14.4804 6.10536 14.2929 6.29289C14.1054 6.48043 14 6.73478 14 7V8H13C12.7348 8 12.4804 8.10536 12.2929 8.29289C12.1054 8.48043 12 8.73478 12 9C12 9.26522 12.1054 9.51957 12.2929 9.70711C12.4804 9.89464 12.7348 10 13 10H14V11C14 11.2652 14.1054 11.5196 14.2929 11.7071C14.4804 11.8946 14.7348 12 15 12C15.2652 12 15.5196 11.8946 15.7071 11.7071C15.8946 11.5196 16 11.2652 16 11V10H17C17.2652 10 17.5196 9.89464 17.7071 9.70711C17.8946 9.51957 18 9.26522 18 9C18 8.73478 17.8946 8.48043 17.7071 8.29289C17.5196 8.10536 17.2652 8 17 8H16V7Z"
+                                                fill="#9CA3AF" />
+                                        </svg>
+                        
+                                        <span class="leading-none text-sm font-medium  text-gray-500">Invite friends & earn money</span>
+                                    </button>
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                        <!-- right column -->
+                        <div class="w-[100%]">
+
+
+                            <!-- Balance us -->
+                            <form class="bg-white rounded-lg py-[23px] px-3 md:px-5 shadow-sm mb-4">
+
+                                <h2 class="text-2xl font-semibold mb-4">Balance</h2>
+                                <p class="text-base font-normal text-gray-500 mb-3">
+                                    To participate in auctions or purchase additional services, please top up your
+                                    balance. You can make a deposit in any
+                                    currency convenient for you using the secure and reliable Stripe payment system.
+                                </p>
+                                <div class="flex justify-between items-end flex-col gap-3 md1:flex-row md1:gap-6">
+                                    <div class="flex w-full  gap-2.5">
+
+                                        <div class="relative w-full md1:w-[346px]">
+                                            <div
+                                                class="absolute left-4 top-1/2 transform -translate-y-1/2 flex gap-2 items-center">
+                                                <svg class="w-4 h-3  rounded translate-y-[1px]">
+                                                    <use xlink:href="./sprite.svg#flag-us"></use>
+                                                </svg>
+                                                <span
+                                                    class="leading-tight text-sm font-semibold text-gray-500 translate-y-[1px]">USD</span>
+                                            </div>
+                                            <span
+                                                class="absolute left-[80px] top-1/2 transform -translate-y-1/2 w-[2px] h-[18px] bg-gray-200"></span>
+                                            <input type="search" id="default-search"
+                                                class="w-full pl-[95px] py-[10px] px-1 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="Enter amount">
+                                        </div>
+
+
+                                        <button type="button"
+                                            class="px-5 py-[11px] text-sm font-medium text-white inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-nowrap">
+                                            <svg class="w-4 h-4 translate-y-[1px]">
+                                                <use xlink:href="./sprite.svg#bank-card"></use>
+                                            </svg>
+                                            Top Up
+                                        </button>
+
+
+                                    </div>
+                                    <button type="button"
+                                        class="px-3 py-[11px] text-sm font-medium text-white inline-flex gap-2 items-center bg-primary-600  rounded-lg text-center dark:bg-blue-600 w-full md1:w-auto justify-center text-nowrap">
+                                        <svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#cash-white"></use>
+                                        </svg>
+                                        Balance: $300
+                                    </button>
+
+
+
+                                </div>
+                                <div class="flex justify-center">
+                                    <button type="button" class="popup-trigger underline text-base font-normal leading-normal text-center text-red-600 pt-2.5 hover:no-underline"
+                                        style="text-underline-offset: 4px; text-decoration-thickness: 1px;">Refund positive balance</button>
+                                </div>
+                            </form>
+
+                            <!-- Balance us warn -->
+                            <form class="bg-white rounded-lg py-[23px] px-3 md:px-5 shadow-sm mb-4">
+                            
+                                <h2 class="text-2xl font-semibold mb-4">Balance</h2>
+                                <p class="text-base font-normal text-gray-500 mb-3">
+                                    To participate in auctions or purchase additional services, please top up your
+                                    balance. You can make a deposit in any
+                                    currency convenient for you using the secure and reliable Stripe payment system.
+                                </p>
+                                <div class="flex justify-between items-end flex-col gap-3 md1:flex-row md1:gap-6">
+                                    <div class="flex w-full items-start  gap-2.5">
+                                        <div>
+                                            <div class="relative w-full md1:w-[346px]">
+                                                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 flex gap-2 items-center">
+                                                    <svg class="w-4 h-3  rounded translate-y-[1px]">
+                                                        <use xlink:href="./sprite.svg#flag-us"></use>
+                                                    </svg>
+                                                    <span class="leading-tight text-sm font-semibold text-gray-500 translate-y-[1px]">USD</span>
+                                                </div>
+                                                <span
+                                                    class="absolute left-[80px] top-1/2 transform -translate-y-1/2 w-[2px] h-[18px] bg-red-500"></span>
+                                                <input type="search" id="default-search"
+                                                    class="w-full pl-[95px] py-[10px] px-1 text-sm bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500"
+                                                    placeholder="Enter amount">
+                                            </div>
+                                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">The minimum deposit amount in USD is $150.</p>
+                                        </div>
+                            
+                                        <button type="button"
+                                            class="px-5 py-[11px] text-sm font-medium text-white inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-nowrap">
+                                            <svg class="w-4 h-4 translate-y-[1px]">
+                                                <use xlink:href="./sprite.svg#bank-card"></use>
+                                            </svg>
+                                            Top Up
+                                        </button>
+                            
+                            
+                                    </div>
+                                    <button type="button"
+                                        class="px-3 py-[11px] text-sm font-medium text-white inline-flex gap-2 items-center bg-primary-600  rounded-lg text-center dark:bg-blue-600 w-full sm:w-auto justify-center text-nowrap">
+                                        <svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#cash-white"></use>
+                                        </svg>
+                                        Balance: $300
+                                    </button>
+                            
+                            
+                            
+                                </div>
+                            
+                               
+                            
+                            
+                            </form>
+
+                            <!-- Balance евро -->
+                            <form class="bg-white rounded-lg py-[23px] px-3 md:px-5 shadow-sm mb-4">
+
+                                <h2 class="text-2xl font-semibold mb-4">Balance</h2>
+                                <p class="text-base font-normal text-gray-500 mb-3">
+                                    To participate in auctions or purchase additional services, please top up your
+                                    balance. You can make a deposit
+                                    in any
+                                    currency convenient for you using the secure and reliable Stripe payment system.
+                                </p>
+                                <div class="flex justify-between items-end flex-col gap-3 md1:flex-row md1:gap-6">
+                                    <div class="flex w-full  gap-2.5">
+
+                                        <div class="relative w-full md1:w-[345px]">
+                                            <div
+                                                class="absolute left-4 top-1/2 transform -translate-y-1/2 flex gap-2 items-center">
+                                                <svg class="translate-y-[1px]" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17" height="12" viewBox="0 0 17 12" fill="none">
+                                                    <rect width="17" height="12" rx="2" fill="white" />
+                                                    <mask id="mask0_542_83749" style="mask-type:luminance"
+                                                        maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="12">
+                                                        <rect width="17" height="12" rx="2" fill="white" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_542_83749)">
+                                                        <rect width="17" height="12" fill="#043CAE" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M7.9275 2.5657L8.49992 2.40001L9.07234 2.5657L8.90468 2.00001L9.07234 1.43433L8.49992 1.60001L7.9275 1.43433L8.09516 2.00001L7.9275 2.5657ZM7.9275 10.5657L8.49992 10.4L9.07234 10.5657L8.90468 10L9.07234 9.43433L8.49992 9.60001L7.9275 9.43433L8.09516 10L7.9275 10.5657ZM12.5475 6.40001L11.9751 6.5657L12.1428 6.00001L11.9751 5.43433L12.5475 5.60001L13.12 5.43433L12.9523 6.00001L13.12 6.5657L12.5475 6.40001ZM3.87988 6.5657L4.4523 6.40001L5.02472 6.5657L4.85706 6.00001L5.02472 5.43433L4.4523 5.60001L3.87988 5.43433L4.04754 6.00001L3.87988 6.5657ZM12.0053 4.40001L11.4328 4.5657L11.6005 4.00001L11.4328 3.43433L12.0053 3.60001L12.5777 3.43433L12.41 4.00001L12.5777 4.5657L12.0053 4.40001ZM4.42216 8.5657L4.99458 8.40001L5.567 8.5657L5.39934 8.00001L5.567 7.43433L4.99458 7.60001L4.42216 7.43433L4.58982 8.00001L4.42216 8.5657ZM10.5237 2.93591L9.95131 3.1016L10.119 2.53591L9.95131 1.97022L10.5237 2.13591L11.0962 1.97022L10.9285 2.53591L11.0962 3.1016L10.5237 2.93591ZM5.90369 10.0298L6.47611 9.86411L7.04853 10.0298L6.88087 9.46411L7.04853 8.89843L6.47611 9.06411L5.90369 8.89843L6.07135 9.46411L5.90369 10.0298ZM12.0053 8.40001L11.4328 8.5657L11.6005 8.00001L11.4328 7.43433L12.0053 7.60001L12.5777 7.43433L12.41 8.00001L12.5777 8.5657L12.0053 8.40001ZM4.42216 4.5657L4.99458 4.40001L5.567 4.5657L5.39934 4.00001L5.567 3.43433L4.99458 3.60001L4.42216 3.43433L4.58982 4.00001L4.42216 4.5657ZM10.5237 9.86411L9.95131 10.0298L10.119 9.46411L9.95131 8.89843L10.5237 9.06411L11.0962 8.89843L10.9285 9.46411L11.0962 10.0298L10.5237 9.86411ZM5.90369 3.1016L6.47611 2.93591L7.04853 3.1016L6.88087 2.53591L7.04853 1.97022L6.47611 2.13591L5.90369 1.97022L6.07135 2.53591L5.90369 3.1016Z"
+                                                            fill="#FFD429" />
+                                                    </g>
+                                                </svg>
+                                                <span
+                                                    class="leading-tight text-sm font-semibold text-gray-500 translate-y-[1px]">EUR</span>
+                                            </div>
+                                            <span
+                                                class="absolute left-[80px] top-1/2 transform -translate-y-1/2 w-[2px] h-[18px] bg-gray-200"></span>
+                                            <input type="search" id="default-search"
+                                                class="w-full pl-[95px] py-[10px] px-1 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="Enter amount">
+                                        </div>
+
+
+                                        <button type="button"
+                                            class="px-5 py-[11px] text-sm font-medium text-white inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-nowrap">
+                                            <svg class="w-4 h-4 translate-y-[1px]">
+                                                <use xlink:href="./sprite.svg#bank-card"></use>
+                                            </svg>
+                                            Top Up
+                                        </button>
+
+
+                                    </div>
+                                    <button type="button"
+                                        class="px-3 py-[11px] text-sm font-medium text-white inline-flex gap-2 items-center bg-primary-600  rounded-lg text-center dark:bg-blue-600 w-full sm:w-auto justify-center text-nowrap">
+                                        <svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#cash-white"></use>
+                                        </svg>
+                                        Balance: €300
+                                    </button>
+
+
+
+                                </div>
+
+
+
+                            </form>
+
+                     
+
+
+                            <div class="bg-white rounded-lg py-[21px] px-[18px] shadow-sm ">
+                                <div class=" flex flex-col justify-between ">
+                                    <div class="overflow-x-auto custom-scroll">
+                                        <table
+                                            class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                            <thead
+                                                class="text-sm font-semibold text-gray-600 bg-gray-100 dark:bg-gray-700 dark:text-gray-400 ">
+                                                <tr>
+                                                    <!-- колонка -->
+                                                    <th scope="col" class="px-6 py-3 rounded-l-lg">
+                                                        Description
+                                                    </th>
+                                                    <!-- колонка -->
+                                                    <th scope="col" class="px-6 py-3 text-center">
+                                                        Status
+                                                    </th>
+                                                    <th scope="col" class="px-6 py-3 text-center">
+                                                        Date
+                                                    </th>
+                                                    <!-- колонка -->
+                                                    <th scope="col" class="px-6 py-3 text-center">
+                                                        Amount
+                                                    </th>
+
+
+
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- строка 1 -->
+                                                <tr class="bg-white dark:bg-gray-800 border-b border-gray-300">
+                                                    <th scope="row"
+                                                        class="pl-5 pr-2 py-[18px] font-medium text-gray-900 whitespace-nowrap dark:text-white flex flex-col ">
+                                                        <span
+                                                            class="text-sm font-semibold leading-6 text-gray-900">Balance
+                                                            Top-Up
+                                                        </span>
+
+
+
+                                                    </th>
+                                                    <td class=" py-2 px-2">
+                                                        <div class="flex justify-center">
+                                                            <button type="button"
+                                                                class="flex gap-1 bg-green-500 items-center px-3 py-0.5 rounded-md">
+
+                                                                <svg class="w-[13px] h-[11px]  flex-shrink-0">
+                                                                    <use xlink:href="./sprite.svg#white-goose"></use>
+                                                                </svg>
+                                                                <span
+                                                                    class="text-xs font-medium text-white">completed</span>
+
+                                                            </button>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="py-2 px-2 text-center">
+                                                        <span class="text-gray-900 text-sm font-medium">08.09.2024 15:00
+                                                            CET</span>
+                                                    </td>
+                                                    <td class="py-2 px-2 text-center">
+                                                        <span class="text-gray-900 text-sm font-medium">150$</span>
+                                                    </td>
+
+
+                                                </tr>
+                                                <!-- строка 2 -->
+                                                <tr class="bg-white dark:bg-gray-800 border-b border-gray-300">
+                                                    <th scope="row"
+                                                        class="pl-5 pr-2 py-[18px] font-medium text-gray-900 whitespace-nowrap dark:text-white flex flex-col ">
+                                                        <span
+                                                            class="text-sm font-semibold leading-6 text-gray-900">Balance
+                                                            Deduction
+                                                        </span>
+
+
+
+                                                    </th>
+                                                    <td class=" py-2 px-2">
+                                                        <div class="flex justify-center">
+                                                            <button type="button"
+                                                                class="flex gap-1 bg-green-500 items-center px-3 py-0.5 rounded-md">
+                                                                <svg class="w-3 h-[13px] flex-shrink-0 ">
+                                                                    <use xlink:href="./sprite.svg#eye-white"></use>
+                                                                </svg>
+                                                                <span
+                                                                    class="text-xs font-medium text-white">removed</span>
+
+                                                            </button>
+                                                        </div>
+
+
+                                                    </td>
+                                                    <td class="py-2 px-2 text-center">
+                                                        <span class="text-gray-900 text-sm font-medium">08.09.2024 14:00
+                                                            CET</span>
+                                                    </td>
+                                                    <td class="py-2 px-2 text-center">
+                                                        <span class="text-gray-900 text-sm font-medium">30$</span>
+                                                    </td>
+
+
+
+                                                </tr>
+                                                <!-- строка 3 -->
+                                                <tr class="bg-white dark:bg-gray-800 border-b border-gray-300">
+                                                    <th scope="row"
+                                                        class="pl-5 pr-2 py-[18px] font-medium text-gray-900 whitespace-nowrap dark:text-white flex flex-col ">
+                                                        <span class="text-sm font-semibold leading-6 text-gray-900">Balance
+                                                            Deduction
+                                                        </span>
+                                                
+                                                
+                                                
+                                                    </th>
+                                                    <td class=" py-2 px-2">
+                                                        <div class="flex justify-center">
+                                                            <button type="button" class="flex gap-1 bg-gray-500 items-center px-3 py-0.5 rounded-md">
+                                                                <svg class="w-3 h-[13px] flex-shrink-0 ">
+                                                                    <use xlink:href="./sprite.svg#pending"></use>
+                                                                </svg>
+                                                                <span class="text-xs font-medium text-white">pending</span>
+                                                
+                                                            </button>
+                                                        </div>
+                                                
+                                                
+                                                    </td>
+                                                    <td class="py-2 px-2 text-center">
+                                                        <span class="text-gray-900 text-sm font-medium">08.09.2024 14:00
+                                                            CET</span>
+                                                    </td>
+                                                    <td class="py-2 px-2 text-center">
+                                                        <span class="text-gray-900 text-sm font-medium">30$</span>
+                                                    </td>
+                                                
+                                                
+                                                
+                                                </tr>
+
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between py-[11.2px] px-3 md:px-5 bg-gray-100 rounded-lg mt-[23px]">
+                                        <p class="text-sm font-medium text-gray-500">Show <span
+                                                class="text-sm font-medium text-gray-900">1-15</span> of
+                                            <span class="text-sm font-medium text-gray-900">987</span>
+                                        </p>
+                                        <div class="flex gap-2.5">
+                                            <button type="button"
+                                                class="flex items-center gap-2 py-2 px-3 text-sm font-medium text-gray-800 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                                <svg class="w-[14px] h-[15px]">
+                                                    <use xlink:href="./sprite.svg#chevron-left-black"></use>
+                                                </svg>
+                                                Previous
+                                            </button>
+
+                             
+
+                                            <button type="button"
+                                                class="flex items-center gap-2 py-2 px-3 text-sm font-medium text-white focus:outline-none bg-primary-600 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+
+                                                Next
+                                                <svg class="w-[10px] h-[15px]">
+                                                    <use xlink:href="./sprite.svg#chevron-right-white"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class=" dark:bg-gray-800 relative z-50">
+                <!-- line across the screen -->
+                <div class=" h-[1px] bg-red-600 w-[100%]"> </div>
+                <div class="py-6 mx-auto max-w-[1290px] px-[15px] h-10 bg-primary-600">
+
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+
+
+        <!-- pop-up refund всплывающее окно -->
+        <section id="popup-inspection"
+            class="hidden bg-gray-200 bg-opacity-90 dark:bg-gray-900 flex justify-center items-center fixed w-[100%] min-h-[100vh] top-0 left-0 overflow-auto z-50">
+            <button type="button" id="popup-inspection-close" class="hidden absolute top-[30px] right-[30px] z-40 text-base rounded-lg w-[35px] h-[35px] bg-white md:flex justify-center items-center 
+          hover:outline hover:outline-1 hover:outline-[#3F83F8] transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path
+                        d="M10.214 8.5L16.6299 2.08405C16.7457 1.97223 16.8381 1.83848 16.9016 1.69059C16.9651 1.5427 16.9986 1.38364 17 1.22269C17.0014 1.06174 16.9707 0.902125 16.9097 0.753155C16.8488 0.604185 16.7588 0.468845 16.645 0.355033C16.5312 0.24122 16.3958 0.151213 16.2468 0.0902649C16.0979 0.0293166 15.9383 -0.00135284 15.7773 4.57675e-05C15.6164 0.00144437 15.4573 0.0348833 15.3094 0.0984113C15.1615 0.161939 15.0278 0.254284 14.9159 0.370058L8.5 6.78601L2.08405 0.370058C1.85543 0.149253 1.54924 0.0270742 1.23142 0.029836C0.913591 0.0325978 0.609567 0.160079 0.384823 0.384823C0.160079 0.609567 0.0325978 0.913591 0.029836 1.23142C0.0270742 1.54924 0.149253 1.85543 0.370058 2.08405L6.78601 8.5L0.370058 14.9159C0.254284 15.0278 0.161939 15.1615 0.0984113 15.3094C0.0348833 15.4573 0.00144437 15.6164 4.57675e-05 15.7773C-0.00135284 15.9383 0.0293166 16.0979 0.0902649 16.2468C0.151213 16.3958 0.24122 16.5312 0.355033 16.645C0.468845 16.7588 0.604185 16.8488 0.753155 16.9097C0.902125 16.9707 1.06174 17.0014 1.22269 17C1.38364 16.9986 1.5427 16.9651 1.69059 16.9016C1.83848 16.8381 1.97223 16.7457 2.08405 16.6299L8.5 10.214L14.9159 16.6299C15.1446 16.8507 15.4508 16.9729 15.7686 16.9702C16.0864 16.9674 16.3904 16.8399 16.6152 16.6152C16.8399 16.3904 16.9674 16.0864 16.9702 15.7686C16.9729 15.4508 16.8507 15.1446 16.6299 14.9159L10.214 8.5Z"
+                        fill="#3F83F8" />
+                </svg>
+            </button>
+            <div class="mx-auto max-w-[1290px] px-[15px]  md:h-auto  ">
+                <div
+                    class="bg-white flex-col rounded-lg p-4 sm:p-6 max-w-[484px] mx-auto">
+                    <h2 class="leading-tight font-bold text-2xl mb-2">Balance</h2>
+                    <p class="text-base font-normal leading-normal text-gray-500 mb-3">The refund of the positive balance is made to the payment method used for the initial deposit. To request a refund to a
+                    different payment method, please contact support.</p>
+                    <div class="relative w-full mb-2">
+                        <div class="absolute left-4 top-1/2 transform -translate-y-1/2 flex gap-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"
+                                fill="none">
+                                <rect width="17" height="12" rx="2" fill="white" />
+                                <mask id="mask0_542_83749" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="17"
+                                    height="12">
+                                    <rect width="17" height="12" rx="2" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_542_83749)">
+                                    <rect width="17" height="12" fill="#043CAE" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.9275 2.5657L8.49992 2.40001L9.07234 2.5657L8.90468 2.00001L9.07234 1.43433L8.49992 1.60001L7.9275 1.43433L8.09516 2.00001L7.9275 2.5657ZM7.9275 10.5657L8.49992 10.4L9.07234 10.5657L8.90468 10L9.07234 9.43433L8.49992 9.60001L7.9275 9.43433L8.09516 10L7.9275 10.5657ZM12.5475 6.40001L11.9751 6.5657L12.1428 6.00001L11.9751 5.43433L12.5475 5.60001L13.12 5.43433L12.9523 6.00001L13.12 6.5657L12.5475 6.40001ZM3.87988 6.5657L4.4523 6.40001L5.02472 6.5657L4.85706 6.00001L5.02472 5.43433L4.4523 5.60001L3.87988 5.43433L4.04754 6.00001L3.87988 6.5657ZM12.0053 4.40001L11.4328 4.5657L11.6005 4.00001L11.4328 3.43433L12.0053 3.60001L12.5777 3.43433L12.41 4.00001L12.5777 4.5657L12.0053 4.40001ZM4.42216 8.5657L4.99458 8.40001L5.567 8.5657L5.39934 8.00001L5.567 7.43433L4.99458 7.60001L4.42216 7.43433L4.58982 8.00001L4.42216 8.5657ZM10.5237 2.93591L9.95131 3.1016L10.119 2.53591L9.95131 1.97022L10.5237 2.13591L11.0962 1.97022L10.9285 2.53591L11.0962 3.1016L10.5237 2.93591ZM5.90369 10.0298L6.47611 9.86411L7.04853 10.0298L6.88087 9.46411L7.04853 8.89843L6.47611 9.06411L5.90369 8.89843L6.07135 9.46411L5.90369 10.0298ZM12.0053 8.40001L11.4328 8.5657L11.6005 8.00001L11.4328 7.43433L12.0053 7.60001L12.5777 7.43433L12.41 8.00001L12.5777 8.5657L12.0053 8.40001ZM4.42216 4.5657L4.99458 4.40001L5.567 4.5657L5.39934 4.00001L5.567 3.43433L4.99458 3.60001L4.42216 3.43433L4.58982 4.00001L4.42216 4.5657ZM10.5237 9.86411L9.95131 10.0298L10.119 9.46411L9.95131 8.89843L10.5237 9.06411L11.0962 8.89843L10.9285 9.46411L11.0962 10.0298L10.5237 9.86411ZM5.90369 3.1016L6.47611 2.93591L7.04853 3.1016L6.88087 2.53591L7.04853 1.97022L6.47611 2.13591L5.90369 1.97022L6.07135 2.53591L5.90369 3.1016Z"
+                                        fill="#FFD429" />
+                                </g>
+                            </svg>
+                            <span class="leading-none text-sm font-semibold text-gray-500">EUR</span>
+                        </div>
+                        <span class="absolute left-[80px] top-1/2 transform -translate-y-1/2 w-[2px] h-[18px] bg-gray-200"></span>
+                        <input type="search" id="refund-search"
+                            class="w-full pl-[95px] py-[10px] px-1 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Enter amount">
+                        <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-sm font-normal text-gray-500"
+                            style="vertical-align: middle;">
+                            Max $3000
+                        </span>
+
+                    </div>
+                    <p id="error-text" class="hidden text-sm text-red-600 dark:text-red-500">Error: The input must be a valid number.</p>
+                    <p id="error-num" class="hidden text-sm text-red-600 dark:text-red-500">Error: The amount must not exceed $3000.</p>
+                    <div class="flex flex-col gap-0.5 mb-[13px]">
+                        <p class="text-gray-900 text-base font-medium flex justify-between dynamic-dots">
+                            <span>Balance to refund</span>
+                            <span class="dots"></span>
+                            <span id="balance-to-refund" >$0</span>
+                        </p>
+                        <p class="text-gray-900 text-base font-medium flex justify-between dynamic-dots">
+                            <span>Refund fee <span id="fee">$0</span> + 5%</span>
+                            <span class="dots"></span>
+                            <span id="fee-1">$0</span>+
+                            <span id="percent"> $0</span>
+                        </p>
+                        <p class="text-gray-900 text-base font-medium flex justify-between dynamic-dots">
+                            <span>Refund to bank card</span>
+                            <span class="dots"></span>
+                            <span id="refund-to-bank-card">$0</span>
+                        </p>
+                        <p class="text-gray-900 text-base font-medium flex justify-between dynamic-dots">
+                            <span>Balance after refund</span>
+                            <span class="dots"></span>
+                            <span>$0</span>
+                        </p>
+                    </div>
+
+
+                    <button type="button"
+                        class="px-3 py-[11px] text-sm font-medium text-white inline-flex gap-2 items-center bg-primary-600  rounded-lg text-center dark:bg-blue-600 w-full justify-center text-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                            <path
+                                d="M13.7506 11.381H4.2666L5.88311 9.84176C6.37193 9.37629 6.37193 8.62392 5.88311 8.15846C5.39428 7.69299 4.60416 7.69299 4.11533 8.15846L0.364745 11.7298C0.249727 11.8393 0.158462 11.9715 0.0947023 12.1167C-0.0315674 12.4084 -0.0315674 12.7358 0.0947023 13.0262C0.158462 13.1715 0.249727 13.3036 0.364745 13.4131L4.11533 16.9845C4.35912 17.2166 4.67917 17.3333 4.99922 17.3333C5.31927 17.3333 5.63932 17.2166 5.88311 16.9845C6.37193 16.519 6.37193 15.7667 5.88311 15.3012L4.2666 13.7619H13.7506C14.4407 13.7619 15.0008 13.2286 15.0008 12.5715C15.0008 11.9143 14.4407 11.381 13.7506 11.381Z"
+                                fill="white" />
+                            <path
+                                d="M19.9053 4.97399C19.8415 4.82875 19.7503 4.69661 19.6353 4.58709L15.8847 1.01573C15.3958 0.550259 14.6057 0.550259 14.1169 1.01573C13.6281 1.48119 13.6281 2.23356 14.1169 2.69903L15.7334 4.23829H6.24941C5.55931 4.23829 4.99922 4.77161 4.99922 5.42874C4.99922 6.08587 5.55931 6.6192 6.24941 6.6192H15.7334L14.1169 8.15846C13.6281 8.62392 13.6281 9.37629 14.1169 9.84176C14.3607 10.0739 14.6807 10.1906 15.0008 10.1906C15.3208 10.1906 15.6409 10.0739 15.8847 9.84176L19.6353 6.27039C19.7503 6.16087 19.8415 6.02873 19.9053 5.8835C20.0316 5.59303 20.0316 5.26446 19.9053 4.97399Z"
+                                fill="white" />
+                        </svg>
+                        Refund: <span id="refund-sum">$0</span> 
+                    </button>
+        
+                </div>
+            </div>
+        </section>
+
+            <!-- pop-up car-fox всплывающее окно -->
+            <section id="popup-inspection"
+                class="hidden bg-gray-200 bg-opacity-90 dark:bg-gray-900 flex justify-center items-center fixed w-[100%] min-h-[100vh] top-0 left-0 overflow-auto z-50">
+                <button type="button" id="popup-inspection-close" class="hidden absolute top-[30px] right-[30px] z-40 text-base rounded-lg w-[35px] h-[35px] bg-white md:flex justify-center items-center 
+              hover:outline hover:outline-1 hover:outline-[#3F83F8] transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path
+                            d="M10.214 8.5L16.6299 2.08405C16.7457 1.97223 16.8381 1.83848 16.9016 1.69059C16.9651 1.5427 16.9986 1.38364 17 1.22269C17.0014 1.06174 16.9707 0.902125 16.9097 0.753155C16.8488 0.604185 16.7588 0.468845 16.645 0.355033C16.5312 0.24122 16.3958 0.151213 16.2468 0.0902649C16.0979 0.0293166 15.9383 -0.00135284 15.7773 4.57675e-05C15.6164 0.00144437 15.4573 0.0348833 15.3094 0.0984113C15.1615 0.161939 15.0278 0.254284 14.9159 0.370058L8.5 6.78601L2.08405 0.370058C1.85543 0.149253 1.54924 0.0270742 1.23142 0.029836C0.913591 0.0325978 0.609567 0.160079 0.384823 0.384823C0.160079 0.609567 0.0325978 0.913591 0.029836 1.23142C0.0270742 1.54924 0.149253 1.85543 0.370058 2.08405L6.78601 8.5L0.370058 14.9159C0.254284 15.0278 0.161939 15.1615 0.0984113 15.3094C0.0348833 15.4573 0.00144437 15.6164 4.57675e-05 15.7773C-0.00135284 15.9383 0.0293166 16.0979 0.0902649 16.2468C0.151213 16.3958 0.24122 16.5312 0.355033 16.645C0.468845 16.7588 0.604185 16.8488 0.753155 16.9097C0.902125 16.9707 1.06174 17.0014 1.22269 17C1.38364 16.9986 1.5427 16.9651 1.69059 16.9016C1.83848 16.8381 1.97223 16.7457 2.08405 16.6299L8.5 10.214L14.9159 16.6299C15.1446 16.8507 15.4508 16.9729 15.7686 16.9702C16.0864 16.9674 16.3904 16.8399 16.6152 16.6152C16.8399 16.3904 16.9674 16.0864 16.9702 15.7686C16.9729 15.4508 16.8507 15.1446 16.6299 14.9159L10.214 8.5Z"
+                            fill="#3F83F8" />
+                    </svg>
+                </button>
+                <div class="mx-auto max-w-[1290px] px-[15px]  md:h-auto  ">
+                    <div
+                        class=" flex justify-center items-center bg-white flex-col gap-5 rounded-md p-4 sm:p-6 max-w-[672px] mx-auto">
+                        <div class="rounded-lg bg-primary-500 py-[30px] sm:py-[52px] w-full relative">
+                            <div class="hidden sm:block absolute left-0 bottom-0">
+                                <img src="img/fox/car-fox.png" width="70" height="70" class="aspect-[1/1]" alt="logo">
+                            </div>
+                            <div class="flex items-center justify-center gap-[16px] w-full">
+            
+                                <svg class="w-[40px] smlf:w-[64px]" xmlns="http://www.w3.org/2000/svg" width="65" height="51"
+                                    viewBox="0 0 65 51" fill="none">
+                                    <path
+                                        d="M39.7051 0.391602C43.6474 1.42784 45.9226 3.83822 48.2879 9.51502C50.0225 13.705 50.7659 15.4621 54.4603 24.2702C59.0108 35.1057 60.9706 39.8589 61.4888 41.1654C61.7366 41.7737 62.1646 42.8549 62.4574 43.5308C64.2596 47.6982 65.048 50.2438 64.575 50.3114C64.4623 50.3339 63.9667 50.3565 63.4937 50.379C62.9981 50.379 62.525 50.4691 62.4349 50.5817C62.3448 50.6718 59.3036 50.7394 55.6543 50.7394C50.5181 50.7394 48.8736 50.6718 48.2879 50.424C47.4544 50.0861 46.5759 49.0048 46.1253 47.8109C45.9676 47.3829 45.5171 46.2565 45.1116 45.3329C44.7061 44.4093 43.9627 42.6747 43.4671 41.5033C42.9715 40.3319 41.3045 36.3672 39.7502 32.7178C36.6865 25.4866 32.3613 15.2594 31.3476 12.8265C30.9872 11.993 30.6042 11.2721 30.4916 11.2496C30.4015 11.2271 29.7257 12.6688 28.9823 14.471C28.2614 16.2731 25.9411 21.8373 23.8461 26.8608L20.039 35.9842L25.8285 36.0968C29.5905 36.1644 31.7531 36.2996 32.0459 36.4798C32.9245 36.9754 33.4877 37.8089 34.4113 40.0391C34.9519 41.2781 36.0107 43.8011 36.7991 45.6708C37.5876 47.518 38.2409 49.3202 38.2409 49.6581C38.2409 51.0323 38.6914 50.9872 22.1115 50.9196C7.37885 50.852 7.01842 50.8295 5.77943 50.3565C2.31027 49.0499 0.327892 46.5944 0.0350408 43.2604C-0.145175 41.233 0.350419 39.2506 1.97236 35.421C2.73828 33.6189 3.752 31.231 4.22507 30.1272C6.13986 25.5768 10.9156 14.3358 12.4925 10.6414C13.4161 8.47878 14.5199 6.06839 14.9705 5.27995C15.9166 3.5679 17.4259 2.05859 17.8539 1.85585C17.8539 1.85585 18.6424 0.954773 20.3319 0.616871L21.7961 0.391602C21.7961 0.391602 25.3779 0.0536957 30.424 0.0536957C36.8442 0.0536957 38.6238 0.121277 39.7051 0.391602Z"
+                                        fill="white" />
+                                </svg>
+            
+            
+                                <svg class="w-[200px] smlf:w-[250px] sm:w-[290px] sm1:sm:w-[376px]"
+                                    xmlns="http://www.w3.org/2000/svg" width="376" height="32" viewBox="0 0 376 32" fill="none">
+                                    <path
+                                        d="M11.4837 0.370748H17.5232L28.7827 31H22.6569L19.8096 23.3643H9.11097L6.30688 31H0.181031L11.4837 0.370748ZM18.7311 19.1797L14.5034 6.53974L10.1032 19.1797H18.7311ZM43.9056 31.2157C41.461 31.2157 39.3759 30.8131 37.6503 30.0078C35.9535 29.1737 34.573 28.0377 33.5089 26.5997C32.4735 25.1617 31.7114 23.5368 31.2225 21.7249C30.7336 19.8843 30.4891 17.9718 30.4891 15.9874V0.370748H36.4424V15.9874C36.4424 17.2528 36.5574 18.4895 36.7875 19.6974C37.0463 20.8765 37.4634 21.9406 38.0386 22.8897C38.6138 23.8388 39.3759 24.5866 40.325 25.133C41.274 25.6794 42.4532 25.9526 43.8624 25.9526C45.3004 25.9526 46.494 25.6794 47.443 25.133C48.4209 24.5578 49.183 23.7957 49.7294 22.8466C50.3046 21.8975 50.7217 20.8334 50.9805 19.6542C51.2393 18.4463 51.3688 17.224 51.3688 15.9874V0.370748H57.2789V15.9874C57.2789 18.0868 57.0201 20.0569 56.5024 21.8975C56.0135 23.7381 55.2226 25.3631 54.1297 26.7723C53.0656 28.1528 51.6851 29.2456 49.9883 30.0509C48.2914 30.8274 46.2639 31.2157 43.9056 31.2157ZM86.1826 5.59066H76.3898V31H70.4797V5.59066H60.6869V0.370748H86.1826V5.59066ZM102.34 31.2157C100.097 31.2157 98.0549 30.7843 96.2143 29.9215C94.4024 29.0587 92.835 27.8939 91.512 26.4272C90.2178 24.9317 89.2112 23.2636 88.4922 21.423C87.7732 19.5536 87.4137 17.641 87.4137 15.6854C87.4137 13.6434 87.7876 11.7021 88.5354 9.8615C89.3119 7.99211 90.3616 6.33842 91.6846 4.90043C93.0363 3.43367 94.6181 2.28328 96.43 1.44924C98.2706 0.586446 100.284 0.155049 102.47 0.155049C104.684 0.155049 106.697 0.600827 108.509 1.49238C110.35 2.38394 111.917 3.57747 113.211 5.07299C114.506 6.5685 115.512 8.23657 116.231 10.0772C116.95 11.9178 117.31 13.816 117.31 15.7717C117.31 17.7848 116.936 19.7261 116.188 21.5955C115.44 23.4362 114.39 25.0898 113.039 26.5566C111.716 27.9946 110.134 29.1306 108.293 29.9646C106.482 30.7987 104.497 31.2157 102.34 31.2157ZM93.4533 15.6854C93.4533 17.0083 93.6546 18.2881 94.0573 19.5248C94.4599 20.7615 95.0351 21.8687 95.7829 22.8466C96.5594 23.7957 97.4941 24.5578 98.5869 25.133C99.7086 25.6794 100.974 25.9526 102.383 25.9526C103.821 25.9526 105.101 25.665 106.223 25.0898C107.344 24.4859 108.279 23.695 109.027 22.7172C109.775 21.7106 110.335 20.6033 110.709 19.3954C111.112 18.1587 111.313 16.922 111.313 15.6854C111.313 14.3624 111.097 13.097 110.666 11.8891C110.263 10.6524 109.674 9.55952 108.897 8.61045C108.15 7.63261 107.215 6.87048 106.093 6.32404C105 5.74884 103.764 5.46124 102.383 5.46124C100.916 5.46124 99.6223 5.76322 98.5007 6.36718C97.4078 6.94238 96.4875 7.71889 95.7397 8.69673C94.992 9.67456 94.4168 10.7674 94.0141 11.9754C93.6402 13.1833 93.4533 14.4199 93.4533 15.6854ZM121.876 31V0.370748H134.861C136.271 0.370748 137.565 0.658346 138.744 1.23354C139.923 1.80874 140.944 2.58526 141.807 3.56309C142.698 4.54093 143.389 5.6338 143.878 6.84172C144.367 8.04963 144.611 9.28631 144.611 10.5517C144.611 12.2773 144.208 13.9166 143.403 15.4697C142.598 17.0227 141.491 18.2881 140.081 19.266C138.672 20.2438 137.004 20.7327 135.077 20.7327H127.83V31H121.876ZM127.83 15.5128H134.732C135.451 15.5128 136.098 15.3115 136.673 14.9089C137.248 14.5062 137.709 13.931 138.054 13.1833C138.399 12.4067 138.571 11.5296 138.571 10.5517C138.571 9.48762 138.37 8.58169 137.967 7.83393C137.594 7.08618 137.09 6.52536 136.458 6.15148C135.854 5.7776 135.192 5.59066 134.473 5.59066H127.83V15.5128ZM148.754 31V0.370748H154.708V25.7801H170.324V31H148.754ZM182.273 0.370748H188.313L199.572 31H193.447L190.599 23.3643H179.901L177.097 31H170.971L182.273 0.370748ZM189.521 19.1797L185.293 6.53974L180.893 19.1797H189.521ZM222.974 5.59066H213.182V31H207.272V5.59066H197.479V0.370748H222.974V5.59066ZM226.777 31V0.370748H247.354V5.59066H232.73V13.4852H244.896V18.3169H232.73V31H226.777ZM264.156 31.2157C261.913 31.2157 259.871 30.7843 258.031 29.9215C256.219 29.0587 254.651 27.8939 253.328 26.4272C252.034 24.9317 251.028 23.2636 250.309 21.423C249.59 19.5536 249.23 17.641 249.23 15.6854C249.23 13.6434 249.604 11.7021 250.352 9.8615C251.128 7.99211 252.178 6.33842 253.501 4.90043C254.853 3.43367 256.434 2.28328 258.246 1.44924C260.087 0.586446 262.1 0.155049 264.286 0.155049C266.5 0.155049 268.514 0.600827 270.325 1.49238C272.166 2.38394 273.733 3.57747 275.028 5.07299C276.322 6.5685 277.328 8.23657 278.047 10.0772C278.766 11.9178 279.126 13.816 279.126 15.7717C279.126 17.7848 278.752 19.7261 278.004 21.5955C277.257 23.4362 276.207 25.0898 274.855 26.5566C273.532 27.9946 271.95 29.1306 270.11 29.9646C268.298 30.7987 266.313 31.2157 264.156 31.2157ZM255.27 15.6854C255.27 17.0083 255.471 18.2881 255.874 19.5248C256.276 20.7615 256.851 21.8687 257.599 22.8466C258.376 23.7957 259.31 24.5578 260.403 25.133C261.525 25.6794 262.79 25.9526 264.2 25.9526C265.638 25.9526 266.917 25.665 268.039 25.0898C269.161 24.4859 270.095 23.695 270.843 22.7172C271.591 21.7106 272.152 20.6033 272.526 19.3954C272.928 18.1587 273.13 16.922 273.13 15.6854C273.13 14.3624 272.914 13.097 272.482 11.8891C272.08 10.6524 271.49 9.55952 270.714 8.61045C269.966 7.63261 269.031 6.87048 267.91 6.32404C266.817 5.74884 265.58 5.46124 264.2 5.46124C262.733 5.46124 261.439 5.76322 260.317 6.36718C259.224 6.94238 258.304 7.71889 257.556 8.69673C256.808 9.67456 256.233 10.7674 255.83 11.9754C255.457 13.1833 255.27 14.4199 255.27 15.6854ZM283.693 31V0.370748H297.239C298.648 0.370748 299.942 0.658346 301.121 1.23354C302.329 1.80874 303.364 2.58526 304.227 3.56309C305.119 4.54093 305.795 5.6338 306.255 6.84172C306.744 8.04963 306.988 9.28631 306.988 10.5517C306.988 11.8459 306.758 13.097 306.298 14.3049C305.867 15.4841 305.234 16.5194 304.4 17.411C303.566 18.3025 302.588 18.9928 301.466 19.4817L308.455 31H301.898L295.599 20.7327H289.646V31H283.693ZM289.646 15.5128H297.109C297.857 15.5128 298.518 15.2971 299.094 14.8657C299.669 14.4056 300.129 13.8016 300.474 13.0538C300.819 12.3061 300.992 11.4721 300.992 10.5517C300.992 9.5739 300.79 8.72549 300.388 8.00649C299.985 7.25873 299.467 6.66916 298.835 6.23776C298.231 5.80636 297.569 5.59066 296.85 5.59066H289.646V15.5128ZM337.36 31V10.8969L329.509 25.8664H326.187L318.336 10.8969V31H312.382V0.370748H318.767L327.826 17.7992L336.972 0.370748H343.314V31H337.36ZM358.034 0.370748H364.074L375.333 31H369.208L366.36 23.3643H355.662L352.858 31H346.732L358.034 0.370748ZM365.282 19.1797L361.054 6.53974L356.654 19.1797H365.282Z"
+                                        fill="white" />
+                                </svg>
+            
+            
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col smlf:flex-row gap-[6px] mb-[6px]">
+                                <div
+                                    class="bg-primary-500 rounded-md py-[5px] px-2.5 flex items-center justify-center gap-1 text-white text-xs font-medium leading-none">
+                                    <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                        viewBox="0 0 10 10" fill="none">
+                                        <path
+                                            d="M8.33345 0.553852V7.26257C8.33346 7.36432 8.30535 7.4641 8.25221 7.55096C8.19907 7.63783 8.12295 7.70842 8.0322 7.755C7.94145 7.80157 7.83959 7.82232 7.73779 7.81498C7.63599 7.80764 7.53818 7.77248 7.45511 7.71337L4.44451 5.56961V2.24682L7.45511 0.10306C7.53818 0.0439469 7.63599 0.00878884 7.73779 0.00144479C7.83959 -0.00589927 7.94145 0.0148545 8.0322 0.0614283C8.12295 0.108002 8.19907 0.178596 8.25221 0.265462C8.30535 0.352328 8.33346 0.452108 8.33345 0.553852Z"
+                                            fill="white" />
+                                        <path
+                                            d="M3.88895 1.69302H1.11113C0.816438 1.69302 0.533818 1.80971 0.325442 2.01742C0.117065 2.22514 0 2.50686 0 2.80061V5.01581C0 5.30956 0.117065 5.59128 0.325442 5.799C0.533818 6.00671 0.816438 6.12341 1.11113 6.12341V8.8924C1.11113 9.18616 1.22819 9.46788 1.43657 9.67559C1.64495 9.88331 1.92757 10 2.22225 10H2.77782C3.07251 10 3.35513 9.88331 3.5635 9.67559C3.77188 9.46788 3.88895 9.18616 3.88895 8.8924V1.69302ZM2.22225 8.8924V6.12341H2.77782V8.8924H2.22225Z"
+                                            fill="white" />
+                                        <path
+                                            d="M8.88902 2.34816V5.46826C9.21364 5.3552 9.49496 5.14431 9.69402 4.8648C9.89307 4.58529 10 4.25099 10 3.90821C10 3.56543 9.89307 3.23114 9.69402 2.95163C9.49496 2.67212 9.21364 2.46123 8.88902 2.34816Z"
+                                            fill="white" />
+                                    </svg>Free CarFax report included
+                                </div>
+                                <div
+                                    class="bg-green-100 rounded-md py-[5px] px-2.5 flex items-center justify-center gap-1 text-green-800 text-xs font-medium leading-none">
+            
+                                    <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                        viewBox="0 0 10 10" fill="none">
+                                        <path
+                                            d="M5 0C4.0111 0 3.0444 0.293245 2.22215 0.842652C1.3999 1.39206 0.759043 2.17295 0.380605 3.08658C0.00216642 4.00021 -0.0968502 5.00555 0.0960758 5.97545C0.289002 6.94535 0.765206 7.83627 1.46447 8.53553C2.16373 9.23479 3.05465 9.711 4.02455 9.90392C4.99445 10.0969 5.99979 9.99783 6.91342 9.6194C7.82705 9.24096 8.60794 8.60009 9.15735 7.77785C9.70675 6.9556 10 5.9889 10 5C9.99854 3.67436 9.47129 2.40344 8.53393 1.46607C7.59656 0.528707 6.32564 0.0014558 5 0ZM6.991 6.991C6.89724 7.08473 6.77008 7.13739 6.6375 7.13739C6.50492 7.13739 6.37777 7.08473 6.284 6.991L4.647 5.354C4.55347 5.25984 4.50068 5.13271 4.5 5V3C4.5 2.86739 4.55268 2.74021 4.64645 2.64645C4.74022 2.55268 4.86739 2.5 5 2.5C5.13261 2.5 5.25979 2.55268 5.35355 2.64645C5.44732 2.74021 5.5 2.86739 5.5 3V4.793L6.991 6.284C7.08474 6.37776 7.13739 6.50492 7.13739 6.6375C7.13739 6.77008 7.08474 6.89723 6.991 6.991Z"
+                                            fill="#03543F" />
+                                    </svg>
+            
+            
+            
+                                    Deliver in 48 hours
+                                </div>
+            
+            
+            
+                            </div>
+                            <h2 class=" leading-tight text-xl font-extrabold mb-1">On-site vehicle inspection at the seller's
+                                location</h2>
+                            <p class="text-sm font-normal leading-normal text-gray-500 mb-2">Autoplatforma specialists will
+                                visit the
+                                location where the vehicle is being sold, inspect its condition, and prepare a
+                                detailed report, which will be sent to your email.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4">
+                                <ul class="flex flex-col gap-4">
+                                    <li class="flex items-center gap-2.5 text-base font-medium leading-6 text-gray-500">
+                                        <svg class="w-4 h-4 flex-shrink-0">
+                                            <use xlink:href="./sprite.svg#icon-shapes"></use>
+                                        </svg>
+                                        Additional photos of the vehicle
+                                    </li>
+                                    <li class="flex items-center gap-2.5 text-base font-medium leading-6 text-gray-500">
+                                        <svg class="w-4 h-4 flex-shrink-0">
+                                            <use xlink:href="./sprite.svg#icon-shapes"></use>
+                                        </svg>
+                                        Description of damaged areas
+                                    </li>
+                                    <li class="flex items-center gap-2.5 text-base font-medium leading-6 text-gray-500">
+                                        <svg class="w-4 h-4 flex-shrink-0">
+                                            <use xlink:href="./sprite.svg#icon-shapes"></use>
+                                        </svg>
+                                        Engine oil leaks
+                                    </li>
+                                </ul>
+            
+                                <ul class="flex flex-col gap-4">
+                                    <li class="flex items-center gap-2.5 text-base font-medium leading-6 text-gray-500">
+                                        <svg class="w-4 h-4 flex-shrink-0">
+                                            <use xlink:href="./sprite.svg#icon-shapes"></use>
+                                        </svg>
+                                        Transmission leaks
+                                    </li>
+                                    <li class="flex items-center gap-2.5 text-base font-medium leading-6 text-gray-500">
+                                        <svg class="w-4 h-4 flex-shrink-0">
+                                            <use xlink:href="./sprite.svg#icon-shapes"></use>
+                                        </svg>
+                                        Engine start verification
+                                    </li>
+                                    <li class="flex items-center gap-2.5 text-base font-medium leading-6 text-gray-500">
+                                        <svg class="w-4 h-4 flex-shrink-0">
+                                            <use xlink:href="./sprite.svg#icon-shapes"></use>
+                                        </svg>
+                                        Movement capability verification
+                                    </li>
+                                </ul>
+            
+            
+                            </div>
+                        </div>
+                        <div class="flex w-full flex-col gap-2.5 justify-center">
+                            <button type="button"
+                                class="w-full bg-primary-500 hover:bg-primary-800 text-white text-sm font-medium leading-normal py-2.5 rounded-lg focus:ring-4 focus:ring-primary-300 dark:hover:bg-primary-500 focus:outline-none dark:focus:ring-primary-800">Purchase
+                                the inspection for <span>$179</span>
+                            </button>
+                            <button id="btn-close-2" type="button"
+                                class="flex items-center gap-2 justify-center w-full text-gray-700 text-sm font-medium leading-normal py-2.5 rounded-lg border border-black hover:border hover:border-1 hover:border-primary-500 primary transition-all duration-300 transition-all duration-300 ">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.00524 1.00521C1.13651 0.873976 1.31453 0.800255 1.50014 0.800255C1.68576 0.800255 1.86377 0.873976 1.99504 1.00521L5.00014 4.01031L8.00524 1.00521C8.06982 0.938349 8.14706 0.885021 8.23246 0.848335C8.31786 0.811648 8.40972 0.792338 8.50266 0.79153C8.59561 0.790723 8.68778 0.808434 8.77381 0.84363C8.85984 0.878827 8.93799 0.930804 9.00372 0.996529C9.06944 1.06225 9.12142 1.14041 9.15662 1.22644C9.19181 1.31247 9.20953 1.40464 9.20872 1.49759C9.20791 1.59053 9.1886 1.68239 9.15191 1.76779C9.11523 1.85319 9.0619 1.93043 8.99504 1.99501L5.98994 5.00011L8.99504 8.00521C9.12255 8.13723 9.19311 8.31405 9.19151 8.49759C9.18992 8.68112 9.1163 8.85669 8.98652 8.98648C8.85673 9.11626 8.68116 9.18988 8.49762 9.19148C8.31409 9.19307 8.13727 9.12252 8.00524 8.99501L5.00014 5.98991L1.99504 8.99501C1.86302 9.12252 1.6862 9.19307 1.50266 9.19148C1.31912 9.18988 1.14356 9.11626 1.01377 8.98648C0.883985 8.85669 0.810366 8.68112 0.808771 8.49759C0.807177 8.31405 0.877733 8.13723 1.00524 8.00521L4.01034 5.00011L1.00524 1.99501C0.874014 1.86374 0.800293 1.68572 0.800293 1.50011C0.800293 1.31449 0.874014 1.13648 1.00524 1.00521Z"
+                                            fill="#374151" />
+                                    </svg>
+                                </span>No, thanks
+                            </button>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+       
+    <script src="js/flowbite.js"></script>
+    <script src="js/main-js.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
+    <script src="js/open-close-popup.js"></script>
+    <!-- код на попап возврата денег -->
+    <script src="js/refund-balance.js"></script>
+</body>
+
+</html>

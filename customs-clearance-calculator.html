@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customs-clearance-calculator.css">
+    <!--! в самом низу сделал комент зачем подключил здесь этот файл -->
+    <link rel="stylesheet" href="css/account-balance.css">
+    <!--! в самом низу сделал комент зачем подключил здесь этот файл -->
+    <link rel="stylesheet" href="css/catalog.css">
+    <title>customs-clearence-calc</title>
+</head>
+
+<body id="body-page" class="dark:bg-gray-800">
+    <div class="wrapper flex min-h-[100vh] flex-col">
+        <!-- Header -->
+        <header>
+            <div class="dark:bg-gray-800">
+                <div class="mx-auto max-w-[1290px] px-[15px] h-10 bg-primary-600"></div>
+            </div>
+
+            <!-- line across the screen -->
+            <div class="h-[1px] bg-red-600 w-[100%]"></div>
+        </header>
+        <!-- Block end -->
+
+        <div class="flex-auto">
+            <!-- калькулятор растаможки-->
+            <section class="bg-white dark:bg-gray-900">
+                <div class="mx-auto max-w-[1290px] px-[15px]">
+                    <h1 class="font-extrabold text-2xl md:text-4xl text-center py-6 md:py-10">Калькулятор растаможки авто в Польше</h1>
+                    <div class="flex flex-col md1:flex-row gap-6 justify-between">
+                        <div class="border border-gray-200 rounded-lg p-2.5 md:p-5 shadow-combined w-full md1:w-[70%]">
+                            <div class="mb-5">
+                                <h2 class="mb-2.5 text-base font-medium text-gray-900">Вариант калькулятора</h2>
+                                <div class="flex gap-3">
+                                    <button type="button"
+                                        class="cal-item _activ-1 w-full h-[37px] text-sm font-medium text-primary-700 border border-primary-600 hover:text-white bg-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-nowrap">
+                                        Упрощенный
+                                    </button>
+                                    <button type="button"
+                                        class="cal-item w-full h-[37px] text-sm font-medium text-primary-700 border border-primary-600 hover:text-white bg-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-nowrap">
+                                        Профессиональный
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- calculator simple -->
+                            <div class="mb-4" id="calculator-simple">
+                              <div class="flex flex-col lg2:flex-row gap-3">
+                                  <div class="flex flex-col w-full gap-2">
+                                      <label for="price-simple" class="text-gray-900 text-sm font-medium">Стоимость автомобиля в США/Канаде</label>
+                                      <input data-price-input type="text" name="price-simple" id="price-simple" placeholder="15000$"
+                                          class="px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+                                  </div>
+                                  <div class="flex flex-col w-full gap-2">
+                                      <label for="country-of-dispatch-simple" class="text-gray-900 text-sm font-medium flex gap-0.5">Страна отправки 
+                                      <svg class="w-5 h-5">
+                                          <use xlink:href="./sprite.svg#info">
+                                          </use>
+                                      </svg></label>
+                                      <select id="country-of-dispatch-simple"
+                                          class="px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 dark:focus:border-primary-500 dark:focus:ring-primary-500"">
+                                          <option selected value="1300">США (Восточное побережье)</option>
+                                          <!-- <option value="2100">США (Восточное побережье)</option> -->
+                                          <option value="2100">США (Западное побережье)</option>
+                                          <option value="2000">Канада</option>
+                                      
+                                      </select>
+                                  </div>
+                                  <div class="flex flex-col w-full gap-2">
+                                      <label for="engine-capacity" class="text-gray-900 text-sm font-medium flex gap-0.5">Объем двигателя (см³)</label>
+                                      <select data-engine-capacity id="engine-capacity"
+                                          class="px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 dark:focus:border-primary-500 dark:focus:ring-primary-500"">
+                                          <option selected value="">До 2000 (см³)</option>
+                                          <option value="">Больше 2000 (см³)</option>
+                                      </select>
+                                  </div>
+                              </div>
+                            </div>
+                            <!-- calculator professional -->
+                            <div class="mb-4 hidden" id="calculator-professional">
+                                <div class="flex flex-col lg2:flex-row gap-3 mb-4">
+                                    <div class="flex flex-col w-full gap-2">
+                                        <label for="price-professional" class="text-gray-900 text-sm font-medium">Стоимость автомобиля в
+                                            США/Канаде</label>
+                                        <input data-price-input type="text" name="price-professional" id="price-professional" placeholder="15000$"
+                                            class="px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+                                    </div>
+                                    <div class="flex flex-col w-full gap-2">
+                                        <label for="auction-commission" class="text-gray-900 text-sm font-medium">Комиссия аукциона</label>
+                                        <input type="text" name="auction-commission" id="auction-commission" placeholder="400$"
+                                            class="px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+                                    </div>
+                                    <div class="flex flex-col w-full gap-2">
+                                        <label for="shipping-cost" class="text-gray-900 text-sm font-medium">Стоимость доставки</label>
+                                        <input type="text" name="shipping-cost" id="shipping-cost" placeholder="1250$"
+                                            class="px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col md1:flex-row gap-3">
+                                    <div class="flex flex-col w-full gap-2">
+                                        <label for="delivery-percentage" class="text-gray-900 text-sm font-medium flex gap-0.5">Оплата VAT в Польше
+                                            или Германии
+                                            <svg class="w-5 h-5">
+                                                <use xlink:href="./sprite.svg#info">
+                                                </use>
+                                            </svg></label>
+                                        <select id="delivery-percentage"
+                                            class="cursor-pointer px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 dark:focus:border-primary-500 dark:focus:ring-primary-500"">
+                                                 <option selected value="0.23">В Польше (23%)</option>
+                                                 <option value="0.19">В Германии (19%)</option>
+                                         </select>
+                                    </div>
+                                    <div class=" flex flex-col w-full gap-2">
+                                            <label for="engine-capacity-prof" class="text-gray-900 text-sm font-medium flex gap-0.5">Объем
+                                                двигателя (см³)</label>
+                                            <select data-engine-capacity id="engine-capacity-prof"
+                                                class="cursor-pointer px-4 h-[42px] border border-gray-300 rounded-lg text-sm font-normal text-left text-gray-500 bg-gray-50 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+                                                <option selected value="">До 2000 (см³)</option>
+                                                <option value="">Больше 2000 (см³)</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="mb-2.5 text-base font-medium text-gray-900">Вид топлива</h2>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                <label for="petrol"
+                                    class="fuel text-base font-medium rounded-lg cursor-pointer px-2.5 md:px-5 h-[56px] w-full relative">
+                                    <input type="radio" value="petrol" name="petrol" id="petrol" class="opacity-0">
+                                    <span class="absolute top-1/2 left-3 md:left-4 transform -translate-y-[50%]">Бензин</span>
+                                </label>
+                                <label for="diesel"
+                                    class="fuel text-base font-medium rounded-lg cursor-pointer px-2.5 md:px-5 h-[56px] w-full relative">
+                                    <input type="radio" value="diesel" name="diesel" id="diesel" class="opacity-0">
+                                    <span class="absolute top-1/2 left-3 md:left-4 transform -translate-y-[50%]">Дизель</span>
+                                </label>
+                                <label for="electric"
+                                    class="fuel text-base font-medium rounded-lg cursor-pointer px-2.5 md:px-5 h-[56px] w-full relative">
+                                    <input type="radio" value="electric" name="electric" id="electric" class="opacity-0">
+                                    <span class="absolute top-1/2 left-3 md:left-4 transform -translate-y-[50%]">Электро</span>
+                                </label>
+                                <label for="petrolElectr"
+                                    class="fuel text-base font-medium rounded-lg cursor-pointer px-2.5 md:px-5 h-[56px] w-full relative">
+                                    <input type="radio" value="petrolElectr" name="petrolElectr" id="petrolElectr" class="opacity-0">
+                                    <span class="absolute top-1/2 left-3 md:left-4 transform -translate-y-[50%]">Бензин/Электро</span>
+                                </label>
+                                <label for="dieselElectr"
+                                    class="fuel text-base font-medium rounded-lg cursor-pointer px-2.5 md:px-5 h-[56px] w-full relative">
+                                    <input type="radio" value="dieselElectr" name="dieselElectr" id="dieselElectr" class="opacity-0">
+                                    <span class="absolute top-1/2 left-3 md:left-4 transform -translate-y-[50%]">Дизель/Электро</span>
+                                </label>
+                                <label for="phev"
+                                    class="fuel text-base font-medium rounded-lg cursor-pointer px-2.5 md:px-5 h-[56px] w-full relative">
+                                    <input type="radio" value="phev" name="phev" id="phev" class="opacity-0">
+                                    <span class="absolute top-1/2 left-3 md:left-4 transform -translate-y-[50%]">Гибрид Plug-In (PHEV)</span>
+                                </label>
+                            </div>
+                            
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-2.5 md:p-5 shadow-combined w-full md1:w-[28%] flex flex-col">
+                            <h2 class="text-base text-gray-500 font-semibold text-center uppercase mb-[19px]">Рассчёт стоимости растаможки</h2>
+                            <div class="flex flex-col flex-1">
+                                <div class="flex flex-col gap-2.5 mb-2.5">
+                                    <p class="text-gray-900 text-base font-medium flex justify-between dynamic-dots">
+                                        <span>Таможенная пошлина</span>
+                                        <span class="dots"></span>
+                                        <span id="customs-duty">0$</span>
+                                    </p>
+                                    <p class="text-gray-900 text-base font-medium flex justify-between dynamic-dots">
+                                        <span>VAT (<span id="precent-vat">23%</span>)</span>
+                                        <span class="dots"></span>
+                                        <span id="vat">0$</span>
+                                    </p>
+                                    <p class="text-gray-900 text-base font-medium flex justify-between dynamic-dots">
+                                        <span>Акцизный налог</span>
+                                        <span class="dots"></span>
+                                        <span id="excise-duty">0 $</span>
+                                    </p>
+                                </div>
+                                <p class="text-sm font-light text-gray-500 mb-2.5"><span class="text-primary-600">Совет:</span> если вы растаможите авто в Германии то сэкономите 4212 zl за счёт более низкой ставки VAT 19% (против 23% в
+                                Польше)</p>
+                                <p class="mb-2.5 text-gray-900 text-base font-medium">Конвертировать валюту</p>
+                                <!-- radio -->
+                                <div class="flex justify-between gap-3 mb-[19px]">
+                                    <div
+                                        class="tabu-body__item _activ text-primary-600 bg-white border border-primary-600 text-sm font-medium rounded-lg  px-5 py-[8px] w-[33%] relative cursor-pointer">
+                                        <input id="usd" type="radio" value="All" name="usd" class="opacity-0">
+                                        <label for="usd"
+                                            class="absolute top-1/2 left-1/2 transform -translate-x-[50%] -translate-y-[50%] cursor-pointer">USD</label>
+                                    </div>
+                                    <div
+                                        class="tabu-body__item text-primary-600 bg-white border border-primary-600 text-sm font-medium rounded-lg  px-5 py-[8px] w-[33%] relative cursor-pointer">
+                                        <input checked id="pl" type="radio" value="Live" name="pl" class="opacity-0">
+                                        <label for="pl"
+                                            class="absolute top-1/2 left-1/2 transform -translate-x-[50%] -translate-y-[50%] cursor-pointer">PL</label>
+                                    </div>
+                                    <div
+                                        class="tabu-body__item text-primary-600 bg-white border border-primary-600 text-sm font-medium rounded-lg  px-5 py-[8px] w-[33%] relative cursor-pointer">
+                                        <input id="eur" type="radio" value="Sold" name="eur" class="opacity-0">
+                                        <label for="eur"
+                                            class="absolute top-1/2 left-1/2 transform -translate-x-[50%] -translate-y-[50%] cursor-pointer">EUR</label>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <p class="text-indigo-500 text-2xl font-bold flex justify-between dynamic-dots">
+                                <span>Итого</span>
+                                <span class="dots-b"></span>
+                                <span id="total-as">0$</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- почему важно заранее проверять налоги -->
+            <section class="bg-white dark:bg-gray-900">
+                <div class="mx-auto max-w-[1290px] px-[15px]">
+                    <div class="gap-16 items-center py-8  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 ">
+                        <div>
+                            <h2 class="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Почему важно заранее проверить налоги</h2>
+                            <div class="mb-4 font-light text-gray-500 text-base md:text-lg flex flex-col gap-4">
+                                <p>Проверка налогов заранее позволяет избежать неожиданных финансовых затрат и неприятных сюрпризов. Это особенно важно
+                                    при
+                                    планировании крупных покупок или сделок, таких как импорт автомобиля или недвижимости.</p>
+                                <p>Знание налоговых ставок и обязательств помогает точно рассчитать бюджет и избежать штрафов за неуплату.
+                                </p>
+                            </div>
+                         
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mt-8">
+                            <img class="w-full rounded-lg"
+                                src="img/customs/image.webp"
+                                width="296"
+                                height="448"
+                                alt="customs">
+                            <img class="mt-4 w-full lg:mt-10 rounded-lg"
+                                src="img/customs/image-2.webp"
+                                 width="296"
+                                height="448"
+                                alt="customs">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- какие налоги на авто в польше, расчет акциза при первой регистрации авто -->
+            <section class="bg-white dark:bg-gray-900 mb-10 md1:mb-[103px]">
+                <div class="mx-auto max-w-[1290px] px-[15px]">
+                    <div class="flex flex-col lg3:flex-row gap-[30px] lg2:gap-[64px]">
+                        <div class="w-[100%] lg3:w-[50%]">
+                            <h2 class="mb-2 text-2xl font-extrabold text-gray-900">Какие налоги на авто в Польше?</h2>
+                            <div class="flex flex-col gap-5 text-lg font-normal text-gray-500 mb-[32px]">
+                                <p>
+                                При растаможке автомобиля из-за границы в Польше уплачиваются два ключевых налога: таможенная пошлина и НДС (VAT). Эти
+                                налоги обязательны для автомобилей, ввозимых из стран, не входящих в Европейский Союз, таких как США или Канада. Они
+                                рассчитываются на основе стоимости автомобиля и его доставки, а также суммы таможенной пошлины.</p>
+                                <p>
+                                Также существует акцизный налог, который оплачивается перед первой регистрацией авто в Польше. Своевременная уплата
+                                налогов гарантирует отсутствие проблем с таможенными органами и ускоряет процесс регистрации.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-[14px]">
+                                <p class="flex flex-col sm1:flex-row items-center gap-2.5 text-base font-normal text-gray-500">
+                                    <span><svg class="w-5 h-5">
+                                         <use xlink:href="./sprite.svg#info-500"></use>
+                                    </svg></span>Формула таможенной пошлины = <a href="#" class="text-indigo-600 hover:underline hover:decoration-1">Стоимость авто и доставки <span class="font-bold text-gray-500">x</span> 10%</a>
+                                </p>
+                                <p class="flex flex-col sm1:flex-row items-center gap-2.5 text-base font-normal text-gray-500">
+                                    <span><svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#info-500"></use>
+                                        </svg></span>Формула VAT = <a href="#"
+                                        class="text-indigo-600 hover:underline hover:decoration-1">Стоимость авто и доставки <span
+                                            class="font-bold text-gray-500">x</span> 23%</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-[100%] lg3:w-[50%]">
+                            <h2 class="mb-2 text-2xl font-extrabold text-gray-900">Расчёт акциза при первой регистрации авто</h2>
+                            <div class="flex flex-col sm1:flex-row gap-5 text-lg font-normal text-gray-500 mb-[32px]">
+                                <p>
+                                    Акциз оплачивается перед первой регистрацией автомобиля в Польше и является обязательным платежом для ввезенных транспортных средств. Уплата акциза производится через электронную систему PUESC, а квитанция об оплате требуется для подачи документов на регистрацию. Его размер сильно зависит от объема двигателя и наличия электро или гибридной системы.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-[14px]">
+                                <p class="flex flex-col sm1:flex-row items-center gap-2.5 text-base font-normal text-gray-500">
+                                    <span>
+                                        <svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#info-500"></use>
+                                        </svg>
+                                    </span>Двигатель до 2000 см³ = <a href="#"
+                                        class="text-indigo-600 hover:underline hover:decoration-1">Стоимость авто и доставки <span
+                                            class="font-bold text-gray-500">x</span> 3,1%</a>
+                                </p>
+                                <p class="flex flex-col sm1:flex-row items-center gap-2.5 text-base font-normal text-gray-500">
+                                    <span><svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#info-500"></use>
+                                        </svg></span>Двигатель от 2000 см³ = <a href="#" class="text-indigo-600 hover:underline hover:decoration-1">Стоимость
+                                        авто и доставки <span class="font-bold text-gray-500">x</span> 18,6%</a>
+                                </p>
+                                <p class="flex flex-col sm1:flex-row items-center gap-2.5 text-base font-normal text-gray-500">
+                                    <span><svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#cross-500"></use>
+                                        </svg></span>Гибрид до 2000 см³ = <a href="#"
+                                        class="text-indigo-600 hover:underline hover:decoration-1">Стоимость
+                                        авто и доставки <span class="font-bold text-gray-500">x</span> 18,6%</a>
+                                </p>
+                                <p class="flex flex-col sm1:flex-row items-center gap-2.5 text-base font-normal text-gray-500">
+                                    <span><svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#cross-500"></use>
+                                        </svg></span>Гибрид до 2000 см³ = <a href="#"
+                                        class="text-indigo-600 hover:underline hover:decoration-1">Гибрид от 2000 см3 <span class="font-bold text-gray-500">x</span> 9.3%</a>
+                                </p>
+                                <p class="flex flex-col sm1:flex-row items-center gap-2.5 text-base font-normal text-gray-500">
+                                    <span><svg class="w-5 h-5">
+                                            <use xlink:href="./sprite.svg#cross-500"></use>
+                                        </svg></span>Гибрид (Plug-In) до 2000 см³ = <a href="#"
+                                        class="text-indigo-600 hover:underline hover:decoration-1">Акциз 0%</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- как секономить на растяможке автомобиля -->
+            <section class="bg-white dark:bg-gray-900 mb-10 md1:mb-[103px]">
+                <div class="mx-auto max-w-[1290px] px-[15px]">
+                    <div class="flex flex-col md1:flex-row h-full gap-3 md:gap-[50px] md1:gap-[80px] items-center">
+                        <div class="w-full md1:w-[42%]">
+                            <div class="relative pb-[76%]">
+                                <img class="absolute top-0 left-0 w-full h-full object-cover rounded-[8px]" width="529" height="405" src="img/customs/image-main.webp"
+                                    alt="picture">
+                            </div>
+                        </div>
+                        <div class="w-full md1:w-[50%]">
+                            <h2 class="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Почему важно
+                                заранее
+                                проверить налоги</h2>
+                            <div class="mb-4 font-light text-gray-500 text-base md:text-lg flex flex-col gap-4">
+                                <p>
+                                    Растаможка автомобиля в Германии может быть более выгодной, чем в Польше, благодаря особенностям налогового
+                                    законодательства. В Германии ставка НДС составляет 19%, что ниже польских 23%, что особенно ощутимо при
+                                    растаможке дорогих автомобилей.
+                                </p>
+                                <p>
+                                    Кроме того, процедуры оформления в Германии могут быть быстрее и более прозрачными. После растаможки в
+                                    Германии вы
+                                    можете свободно ввозить автомобиль в Польшу, поскольку он уже будет считаться оформленным в ЕС.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <button type="button"
+                                    class="px-5 h-[42px] text-sm font-medium text-white inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-nowrap">
+                                    Get involved
+                                    <svg class="w-[15px] h-[11px]">
+                                        <use xlink:href="./sprite.svg#arrow-white-right"></use>
+                                    </svg>
+                                </button>
+                                <button type="button"
+                                    class="border border-gray-200 px-5 h-[42px] text-sm font-medium text-gray-900 hover:text-primary-700 inline-flex items-center gap-2 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-nowrap">
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            
+            </section>
+            <!-- часто задаваемые вопросы -->
+            <section class="bg-white dark:bg-gray-900">
+                <div class="mx-auto max-w-[1290px] px-[15px]">
+                    <div class="mb-6 md1:mb-[48px]">
+                        <h2 class="leading-tight text-3xl md:text-4xl  font-extrabold mb-6 md1:mb-[32px] dark:text-white">Frequently asked
+                            questions</h2>
+                        <div class=" h-[1px] bg-gray-200 w-[100%]"> </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-x-[46px]">
+                        <!-- block left -->
+                        <div class="flex flex-col gap-y-6 w-full md1:w-[50%]">
+                            <!-- block answer -->
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Сколько стоит растаможка автомобиля из США в Польше?</h2>
+                                    <p class="text-base font-normal text-gray-500">Стоимость зависит от пошлины (10% от цены авто), НДС (23%), акциза (в зависимости от объёма двигателя), а также расходов
+                                    на сертификацию, транспортировку и другие сборы.
+                                    </p>
+                                </div>
+                    
+                            </div>
+                            <!-- block answer -->
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Какие документы необходимы для растаможки автомобиля?
+                                    </h2>
+                                    <ul class="text-base font-normal text-gray-500">Для растаможки требуются:
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span
+                                                class="pl-3">Технический паспорт (Title);
+                                            </span>
+                                        </li>
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span
+                                                class="pl-3">Счёт-фактура (Invoice);
+                                            </span>
+                                        </li>
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span
+                                                class="pl-3">Документы о транспортировке;
+                                            </span>
+                                        </li>
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span
+                                                class="pl-3">Сертификат соответствия (если имеется);
+                                            </span>
+                                        </li>
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span
+                                                class="pl-3">Декларация о стоимости автомобиля.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                            </div>
+                            <!-- block answer -->
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Сколько времени занимает процесс растаможки?</h2>
+                                    <p class="text-base font-normal text-gray-500">В среднем, процесс занимает от нескольких дней до недели, включая доставку документов, проверку автомобиля и оформление
+                                    всех формальностей.
+                                    </p>
+                                </div>
+                    
+                            </div>
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Какие автомобили выгоднее всего ввозить из США?</h2>
+                                    <p class="text-base font-normal text-gray-500">Наиболее выгодно ввозить электромобили, гибриды, автомобили премиум-класса и редкие модели, которые сложно найти на
+                                    европейском рынке.
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Нужно ли сертифицировать автомобиль из США в Польше?</h2>
+                                    <p class="text-base font-normal text-gray-500">Да, сертификация обязательна для большинства автомобилей. Она подтверждает соответствие транспортного средства
+                                    европейским стандартам и является необходимой для регистрации.
+                                    </p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- block right -->
+                        <div class="flex flex-col gap-y-6 w-full md1:w-[50%]">
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Какие налоги и сборы нужно оплатить?
+                                    </h2>
+                                    <ul class="text-base font-normal text-gray-500">Основные налоги и сборы включают:
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span class="pl-3">Таможенную пошлину (10% от стоимости авто);</span></li>
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span
+                                                class="pl-3">НДС (23%);</span></li>
+                                        <li class="flex gap-2 pl-2 relative"><span
+                                                class="absolute top-[10px] w-[6px] h-[6px] bg-gray-500 rounded-full flex flex-shrink-0"></span><span
+                                                class="pl-3">Акциз (0%, 3,1% или 18,7% в зависимости от объёма двигателя).</span></li>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                            <!-- block answer -->
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Освобождаются ли электромобили от акциза?</h2>
+                                    <p class="text-base font-normal text-gray-500">Да, электромобили и некоторые гибриды освобождены от акциза, что делает их растаможку более экономически выгодной.
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <!-- block answer -->
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Что делать, если в документах указана заниженная стоимость автомобиля?</h2>
+                                    <p class="text-base font-normal text-gray-500">Если таможенные органы заподозрят занижение стоимости, они могут запросить дополнительные доказательства или установить
+                                    собственную оценку авто.
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <!-- block answer -->
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Можно ли самому растаможить автомобиль из США?</h2>
+                                    <p class="text-base font-normal text-gray-500">Да, вы можете пройти весь процесс самостоятельно, однако это требует знания таможенных процедур, подготовки всех
+                                    необходимых документов и выполнения технических требований. Для упрощения процесса многие предпочитают обращаться к
+                                    профессионалам.
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <!-- block answer -->
+                            <div class="flex gap-x-3">
+                                <div class="flex flex-shrink-0">
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="./sprite.svg#questions"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="leading-tight text-lg font-semibold mb-2">Какие штрафы могут быть за несвоевременную растаможку?</h2>
+                                    <p class="text-base font-normal text-gray-500">Если автомобиль не будет растаможен в установленные сроки (обычно 10 дней с момента ввоза на территорию ЕС), вы можете
+                                    столкнуться с административными штрафами, начислением пени или конфискацией транспортного средства.
+                                    </p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="dark:bg-gray-800 relative z-50 mt-10">
+                <!-- line across the screen -->
+                <div class="h-[1px] bg-red-600 w-[100%]"></div>
+                <div class="py-6 mx-auto max-w-[1290px] px-[15px] h-10 bg-primary-600"></div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Вставляем спрайт в HTML -->
+    <object type="image/svg+xml" data="./sprite.svg" style="display: none"></object>
+
+    <script src="js/flowbite.js"></script>
+    <!-- подключаю -->
+    <script src="js/customs-clearance-calculator.js"></script>
+
+
+
+</body>
+
+</html>
+<!-- 
+<link rel="stylesheet" href="css/account-balance.css">
+в этом файле стили для вот этих точек Таможенная пошлина.....................19.921 zl
+эти стили используются в файле account-balance.html так вот может их вынести отдельно
+в общий файл 
+ -->
+<!-- 
+ <link rel="stylesheet" href="css/catalog.css"> и в этом коде такая же ситуация 
+  класс tabu-body__item использовался в файле catalog.html и я его переиспользую
+  в этом файле - тоже считаю логично вывести в общий файл еще момент я закоментировал
+  белый цвет текста 
+.tabu-body__item {
+/* color: #fff; */
+transition: background 0.3s ease 0s;
+} 
+-->

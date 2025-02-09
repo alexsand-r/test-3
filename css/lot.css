@@ -1,0 +1,70 @@
+
+
+
+.images-preview {
+    margin-top: -46px;
+}
+
+
+
+@media (min-width: 530px) {
+    .images-preview {
+        margin-top: -60px;
+    }
+}
+
+@media (min-width: 600px) {
+    .images-preview {
+        margin-top: -60px;
+    }
+} 
+@media (min-width: 768px) {
+    .images-preview {
+        margin-top: -69px;
+    }
+}
+
+
+@media (min-width: 991px) {
+    .images-preview {
+        margin-top: -80px;
+    }
+}
+
+
+
+/* -------------------------------------------------- */
+.box__post {
+    height: 160px;
+    overflow: hidden;
+}
+/*-----------------------  кнопки показать больше и меньше на странице со слайдером авто  ---------------*/
+.box-text {
+    max-height: 123px;
+    overflow: hidden;
+}
+/* cкрол бар синий скрол бар в condition    damage  fuel type  */
+/* Стилизация ширины и цвета скроллбара */
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2563EB;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2563EB;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 767px) {
+    .images-preview__slider .swiper-slide {
+        margin-right: 10px !important;
+    }
+}
+
+
+/*------------- код для мобильных фоток ------------------*/

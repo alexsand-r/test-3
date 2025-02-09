@@ -96,16 +96,16 @@ function openText() {
           // Добавляем все изображения из слайдера в галерею
           sliderElements.forEach((sliderImage) => {
             const imgSrc = sliderImage.querySelector("img").src;
-
             // Создаем новый элемент img для каждой картинки из слайдера
             const newImage = document.createElement("img");
             newImage.src = imgSrc;
             newImage.alt = "picture";
             newImage.classList.add(
-              "border-[3px]",
-              "border-white",
-              "border-l-[6px]",
-              "border-r-[6px]"
+              "rounded-[8px]", // Бордер радиус 8 пикселей
+              "mb-[6px]", // Маржин боттом 6 пикселей
+              "mr-[6px]",
+              "ml-[6px]",
+              "max-w-[97%]" // Максимальная ширина 100%
             );
 
             // Добавляем изображение в галерею

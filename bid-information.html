@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>registration form</title>
+  </head>
+
+  <body id="body-page" class="dark:bg-gray-800">
+    <div class="wrapper flex min-h-[100vh] flex-col">
+      <!-- Header -->
+      <header>
+        <div class="dark:bg-gray-800">
+          <div
+            class="mx-auto max-w-[1290px] px-[15px] h-10 bg-primary-600"
+          ></div>
+        </div>
+
+        <!-- line across the screen -->
+        <div class="h-[1px] bg-red-600 w-[100%]"></div>
+      </header>
+      <!-- Block end -->
+
+      <div class="flex-auto">
+        <section class="py-8 bg-white dark:bg-gray-900 lg:py-0">
+          <div class="mx-auto max-w-[1290px] md1:px-[15px]">
+            <br />
+            <br />
+            <a
+              href="#"
+              data-popup="popup-bid-information"
+              class="popup-trigger inline-flex text-white items-center bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 lg:pr-[16px] lg:py-[8px] dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 pr-[16px] mr-[15px] lg:mr-[0px] sign-up"
+            >
+              click</a
+            >
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="dark:bg-gray-800 relative z-50">
+          <!-- line across the screen -->
+          <div class="h-[1px] bg-red-600 w-[100%]"></div>
+          <div
+            class="py-6 mx-auto max-w-[1290px] px-[15px] h-10 bg-primary-600"
+          ></div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- попап popup-bid-information -->
+
+    <section
+      id="popup-bid-information"
+      class="popups hidden bg-gray-200 flex-col items-center justify-center fixed w-[100%] min-h-[100vh] top-0 left-0 overflow-auto z-50"
+    >
+      <div class="overflow-y-auto h-screen flex items-center p-4 md:p-0">
+        <div
+          class="flex justify-center items-center bg-white flex-col gap-4 rounded-lg p-3 md:p-5 max-w-[620px] mx-auto text-gray-500 text-base font-normal relative"
+        >
+          <button
+            type="button"
+            class="popup-close absolute top-[15px] right-[15px] z-40"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
+            >
+              <path
+                d="M7.20988 6.88L11.7388 2.3511C11.8205 2.27217 11.8857 2.17775 11.9305 2.07336C11.9754 1.96897 11.999 1.85669 12 1.74308C12.001 1.62947 11.9793 1.5168 11.9363 1.41164C11.8933 1.30649 11.8297 1.21095 11.7494 1.13062C11.669 1.05028 11.5735 0.986744 11.4684 0.943721C11.3632 0.900699 11.2505 0.87905 11.1369 0.880037C11.0233 0.881024 10.911 0.904628 10.8066 0.949472C10.7023 0.994315 10.6078 1.0595 10.5289 1.14122L6 5.67013L1.47109 1.14122C1.30972 0.98536 1.09358 0.899116 0.869234 0.901066C0.644888 0.903015 0.430283 0.993002 0.27164 1.15164C0.112997 1.31029 0.0230102 1.52489 0.0210607 1.74924C0.0191112 1.97359 0.105355 2.18972 0.261217 2.3511L4.79012 6.88L0.261217 11.4089C0.179495 11.4878 0.11431 11.5823 0.0694668 11.6866C0.0246235 11.791 0.00101956 11.9033 3.23065e-05 12.0169C-0.000954946 12.1305 0.020694 12.2432 0.0637164 12.3484C0.106739 12.4535 0.170273 12.5491 0.250611 12.6294C0.33095 12.7097 0.426484 12.7733 0.531639 12.8163C0.636794 12.8593 0.749465 12.881 0.863076 12.88C0.976687 12.879 1.08896 12.8554 1.19336 12.8105C1.29775 12.7657 1.39216 12.7005 1.47109 12.6188L6 8.08988L10.5289 12.6188C10.6903 12.7746 10.9064 12.8609 11.1308 12.8589C11.3551 12.857 11.5697 12.767 11.7284 12.6084C11.887 12.4497 11.977 12.2351 11.9789 12.0108C11.9809 11.7864 11.8946 11.5703 11.7388 11.4089L7.20988 6.88Z"
+                fill="#9CA3AF"
+              />
+            </svg>
+          </button>
+          <h1 class="text-xl font-medium self-start">Bid information</h1>
+          <p class="self-start">
+            Your current bidding limit is
+            <span class="text-primary-600">$0</span>. To place a bid, please add
+            a deposit equal to 10% of your desired bid amount.
+          </p>
+          <div class="w-full">
+            <div class="flex justify-between mb-1 gap-2">
+              <p class="text-xs font-medium text-gray-500">
+                Your balance is $0
+              </p>
+              <p class="text-xs font-medium text-gray-500">
+                Your max bid limit is $0
+              </p>
+            </div>
+            <span class="block w-full h-[6px] bg-green-500 rounded-sm"></span>
+          </div>
+          <div class="text-sm font-medium text-gray-500 self-start">
+            <p>
+              Your payment are protected.
+              <a
+                href="#"
+                class="text-primary-600 underline underline-offset-2 decoration-transparent hover:decoration-primary-600 transition-all duration-300"
+                >What is a deposit?</a
+              >
+            </p>
+            <p>
+              It remains in your account and can be refunded at any time upon
+              request.
+            </p>
+          </div>
+          <div class="flex w-full">
+            <button
+              type="button"
+              class="w-full bg-primary-700 hover:bg-primary-800 text-white text-sm font-medium leading-normal py-2.5 rounded-lg focus:ring-4 focus:ring-primary-300 dark:hover:bg-primary-500 focus:outline-none dark:focus:ring-primary-800"
+            >
+              Add a deposit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Вставляем спрайт в HTML -->
+    <object
+      type="image/svg+xml"
+      data="./sprite.svg"
+      style="display: none"
+    ></object>
+    <script src="js/flowbite.js"></script>
+    <!-- тут код который показывает и скрывает всплывающее окно pop-up (общий код для всех попап)  -->
+    <script src="js/open-close-popup.js"></script>
+  </body>
+</html>
+
+<!-- 
+на кнопку открытия формы в штмл  пишем data-popup="popup-bid-information" 
+ также для этой кнопки прописываем класс popup-trigger  
+ 
+ подключаем в шмтл попап id="popup-bid-information"
+ подключаем скрипт формы файл    <script src="js/registration-form.js"></script>
+ -->

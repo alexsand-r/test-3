@@ -1,0 +1,13 @@
+.fuel {
+    border: 1px solid #e5e7eb;
+    color: #111827;
+    background-color: #fff;
+}
+.fuel-primery {
+    color: #1d4ed8;
+    border: 1px solid #1d4ed8;
+}
+.cal-item._activ-1 {
+    background: var(--primary-600, #1C64F2);
+    color: #fff;
+}
